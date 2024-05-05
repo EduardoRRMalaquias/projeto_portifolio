@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Lemon Bold";
+  src: url(fonts/LEMONMILK-Bold.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lemon light";
+  src: url(fonts/LEMONMILK-Light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --font-display-XGG: 700 3rem/1.25 "Lemon Milk", sans-serif;
+  --font-display-XG: 700 2.25rem/1.15 "Lemon Milk", sans-serif;
+  --font-primaria-XG: 700 2.25rem/1.11 "Poppins", sans-serif;
+  --font-display-GG: 700 2rem/1.25 "Lemon Milk", sans-serif;
+  --font-primaria-GG: 600 2rem/1.25 "Poppins", sans-serif;
+  --font-display-G: 700 1.75rem/1.5 "Lemon Milk", sans-serif;
+  --font-primaria-G: 700 1.75rem/1.5 "Poppins", sans-serif;
+  --font-display-m: 300 1.5rem/1.3 "Lemon Milk", sans-serif;
+  --font-primaria-m: 700 1.5rem/1.3 "Poppins", sans-serif;
+  --font-texto-m: 400 1.5rem/1.15 "Roboto", sans-serif;
+  --font-primaria-p: 600 1.25rem/1.5 "Poppins", sans-serif;
+  --font-primaria-p-b: 700 1.25rem/1.5 "Poppins", sans-serif;
+  --font-texto-p: 400 1.25rem/1.5 "Roboto", sans-serif;
+  --font-primaria-pp-xb: 700 1rem/1.5 "Poppins", sans-serif;
+  --font-primaria-pp-b: 600 1rem/1.5 "Poppins", sans-serif;
+  --font-display-pp: 300 1rem/1.5 "Lemon Milk", sans-serif;
+  --font-primaria-pp: 500 1rem/1.5 "Poppins", sans-serif;
+  --font-texto-pp: 400 1rem/1.25 "Roboto", sans-serif;
+  --font-primaria-xp: italic 900 0.75rem/1.5 "Poppins", sans-serif;
+  --font-texto-xp: 400 0.75rem/1.5 "Roboto", sans-serif;
+}
+
+/* titulos e subtitulos */
+.titulo-principal {
+  font: var(--font-display-XGG);
+}
+
+.subtitulo-principal-grande {
+  font: var(--font-primaria-XG);
+}
+
+.subtitulo-principal-medio {
+  font: var(--font-primaria-m);
+}
+
+.subtitulo-principal-pequeno {
+  font: var(--font-primaria-pp-xb);
+}
+
+.subtitulo-secundario-grande {
+  font: var(--font-display-m);
+}
+
+.subtitulo-decorativo {
+  font: var(--font-display-XG);
+}
+
+/* textosfuncionai (botoes e links)*/
+.texto-funcional1-grande {
+  font: var(--font-primaria-GG);
+}
+
+.texto-funcional1-pequeno {
+  font: var(--font-primaria-pp-b);
+}
+
+.texto-funcional2 {
+  font: var(--font-primaria-pp);
+}
+
+/* textos*/
+
+.texto-primario {
+  font: var(--font-texto-m);
+}
+
+.texto-secundario {
+  font: var(--font-texto-p);
+}
+
+.texto-terciario {
+  font: var(--font-texto-pp);
+}
+
+.destaque {
+  font: var(--font-primaria-xp);
+}
+
+@media only screen and (max-width: 38rem) {
+  /* titulos e subtitulos */
+  .titulo-principal {
+    font: var(--font-display-GG);
+  }
+
+  .subtitulo-principal-grande {
+    font: var(--font-primaria-G);
+  }
+
+  .subtitulo-principal-medio {
+    font: var(--font-primaria-p-b);
+  }
+
+  .subtitulo-secundario-grande {
+    font: var(--font-display-pp);
+  }
+
+  .subtitulo-decorativo {
+    font: var(--font-display-G);
+  }
+
+  /* textosfuncionai (botoes e links)*/
+
+  .texto-funcional1-grande {
+    font: var(--font-primaria-p);
+  }
+
+  /* textos*/
+  .texto-primario {
+    font: var(--font-texto-pp);
+  }
+
+  .texto-secundario {
+    font: var(--font-texto-pp);
+  }
+
+  .texto-terciario {
+    font: var(--font-texto-xp);
+  }
+}
