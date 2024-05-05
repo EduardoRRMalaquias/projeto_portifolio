@@ -14,8 +14,14 @@
     --cor-01: #0e0e0e;
     --cor-00: #000000;
     /* cores Primarias */
-
+    --cor-p6: #82d1f2;
+    --cor-p5: #4ca8cf;
+    --cor-p4: #207fb4;
+    --cor-p3: #64b9de;
+    --cor-p2: #1064a1;
+    --cor-p1: #1064a1;
     /* gradientes */
+    --gradiente-primario: #1064a1, #4ca8cf;
     --gradiente-neutro: 90deg #f7f7f7, #cccccc;
   }
 }
