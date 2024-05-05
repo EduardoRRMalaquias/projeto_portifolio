@@ -1,0 +1,133 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    /* cores Base */
+    --cor-11: #ffffff;
+    --cor-10: #f7f7f7;
+    --cor-09: #ededed;
+    --cor-08: #cccccc;
+    --cor-07: #b3b3b3;
+    --cor-06: #9c9c9c;
+    --cor-05: #595959;
+    --cor-04: #404040;
+    --cor-03: #242424;
+    --cor-02: #1a1a1a;
+    --cor-01: #0e0e0e;
+    --cor-00: #000000;
+    /* cores Primarias */
+
+    /* gradientes */
+    --gradiente-neutro: 90deg #f7f7f7, #cccccc;
+  }
+}
+
+:root {
+  /* cores Base */
+  --cor-11: #000000;
+  --cor-10: #0e0e0e;
+  --cor-09: #1a1a1a;
+  --cor-08: #242424;
+  --cor-07: #404040;
+  --cor-06: #595959;
+  --cor-05: #9c9c9c;
+  --cor-04: #b3b3b3;
+  --cor-03: #cccccc;
+  --cor-02: #ededed;
+  --cor-01: #f7f7f7;
+  --cor-00: #ffffff;
+  /* cores Primarias */
+  --cor-p7: #075187;
+  --cor-p6: #1064a1;
+  --cor-p5: #207fb4;
+  --cor-p4: #4ca8cf;
+  --cor-p3: #64b9de;
+  --cor-p2: #82d1f2;
+  --cor-p1: #c5f1ff;
+  /* gradientes */
+  --gradiente-primario: 90deg, #4ca8cf, #82d1f2;
+  --gradiente-primario2: 90deg, #82d1f2, #4ca8cf;
+  --gradiente-primario-light: 90deg, #1064a1, #4ca8cf;
+  --gradiente-secundario: 90deg, 35% #82d1f2, 90% #488bc9;
+  --gradiente-neutro: 90deg #404040, #1a1a1a;
+  --gradiente-neutro-light: 90deg #f7f7f7, #cccccc;
+}
+
+/* classes Ultilitarias
+/* cores Base */
+
+.cor-11 {
+  color: var(--cor-11);
+}
+
+.cor-10 {
+  color: var(--cor-10);
+}
+
+.cor-09 {
+  color: var(--cor-09);
+}
+
+.cor-08 {
+  color: var(--cor-08);
+}
+
+.cor-07 {
+  color: var(--cor-07);
+}
+
+.cor-06 {
+  color: var(--cor-06);
+}
+
+.cor-05 {
+  color: var(--cor-05);
+}
+
+.cor-04 {
+  color: var(--cor-04);
+}
+
+.cor-03 {
+  color: var(--cor-03);
+}
+
+.cor-02 {
+  color: var(--cor-02);
+}
+
+.cor-01 {
+  color: var(--cor-01);
+}
+
+.cor-00 {
+  color: var(--cor-00);
+}
+
+/* cores Primarias */
+
+.cor-p7 {
+  color: var(--cor-p7);
+}
+
+.cor-p6 {
+  color: var(--cor-p6);
+}
+
+.cor-p5 {
+  color: var(--cor-p5);
+}
+
+.cor-p4 {
+  color: var(--cor-p4);
+}
+
+.cor-p3 {
+  color: var(--cor-p3);
+}
+
+.cor-p2 {
+  color: var(--cor-p2);
+}
+
+.cor-p1 {
+  color: var(--cor-p1);
+}
