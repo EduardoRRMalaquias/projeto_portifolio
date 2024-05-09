@@ -1,7 +1,8 @@
 :root {
   --sombra-forte: 0px 4px 4px 2px #00000040;
   --sombra-fraca: 0px 2px 4px 0px #00000033;
-  --briho: 0px 1px 2px 0px #075187cc;
+  --briho: 0px 1px 4px 0px #075287e1;
+  --brilho-forte: 0px 2px 4px 1px #075287e1
   --sombra-interna: inset 0px 2px 2px 0px #00000026;
 }
 
@@ -67,7 +68,6 @@
 
 @media (prefers-color-scheme: light) {
   .Btn-link:hover {
-    /* variaveis */
     --gradiente-primario: #82d1f2, #4ca8cf;
     --cor-p1: #c5f1ff;
     background: linear-gradient(var(--gradiente-primario));
@@ -95,24 +95,39 @@
 .Btn-primario {
   display: flex;
   align-items: center;
-  height: var(--p7);
   gap: var(--p2);
-  padding: var(--p2);
+  padding: var(--p1) var(--p2);
   box-shadow: var(--briho);
   background: linear-gradient(var(--gradiente-secundario));
   color: var(--cor-p7);
+  border: none;
   border-radius: var(--p1);
   max-width: max-content;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.1s;
 }
 .Btn-primario:hover {
-
+  transform: scale(1.1);
+  box-shadow: var(--brilho-forte);
 }
-
-.Btn-primario span{
+/* imagem botao funcional*/
+.Btn-primario span {
   height: 12px;
   width: 8px;
   background-color: var(--cor-p7);
-  border-radius: 2px 16px 16px 2px;
+}
+/* botao funcional grande*/
+.Btn-primario.grande {
+  height: var(--p11);
+  padding: var(--p2) var(--p4);
+  border-radius: var(--p2);
+  max-width: max-content;
+}
+/* imagem botao funcional grande*/
+.Btn-primario.grande span {
+  height: var(--p6);
+  width: var(--p4);
+  background-color: var(--cor-p7);
+  border-radius: 0 50% 50% 0;
 }

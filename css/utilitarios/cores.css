@@ -24,7 +24,7 @@
   --gradiente-primario: #82d1f2, #4ca8cf;
   --gradiente-primario2: #4ca8cf, #82d1f2;
   --gradiente-primario-light: #1064a1, #4ca8cf;
-  --gradiente-secundario: 35% #82d1f2, 90% #488bc9;
+  --gradiente-secundario: #82d1f2 35%, #488bc9 90%;
   --gradiente-neutro: #404040, #1a1a1a;
   --gradiente-neutro-light: #f7f7f7, #cccccc;
 }

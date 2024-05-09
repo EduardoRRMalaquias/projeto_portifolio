@@ -34,53 +34,54 @@
   --font-texto-xp: 400 0.75rem/1.5 "Roboto", sans-serif;
 }
 
+/* classes Ultilitarias
 /* titulos e subtitulos */
 .titulo-principal {
   font: var(--font-display-XGG);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-principal-grande {
   font: var(--font-primaria-XG);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-principal-medio {
   font: var(--font-primaria-m);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-principal-pequeno {
   font: var(--font-primaria-pp-xb);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-secundario-grande {
   font: var(--font-display-m);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-decorativo {
   font: var(--font-display-XG);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
-/* textosfuncionai (botoes e links)*/
+/* textos funcionais (botoes e links)*/
 .texto-funcional1-grande {
   font: var(--font-primaria-GG);
   text-transform: uppercase;
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 .texto-funcional1-pequeno {
   font: var(--font-primaria-pp-b);
-  line-height: 1.5;
+  letter-spacing: 1.5;
   text-transform: uppercase;
 }
 
 .texto-funcional2 {
   font: var(--font-primaria-pp);
-  line-height: 1.5;
+  letter-spacing: 1.5;
 }
 
 /* textos*/
@@ -102,7 +103,7 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 38rem) {
+@media only screen and (max-width: 38rem /* 600px */) {
   /* titulos e subtitulos */
   .titulo-principal {
     font: var(--font-display-GG);
@@ -124,7 +125,7 @@
     font: var(--font-display-G);
   }
 
-  /* textosfuncionai (botoes e links)*/
+  /* textos funcionais (botoes e links)*/
 
   .texto-funcional1-grande {
     font: var(--font-primaria-p);
