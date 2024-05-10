@@ -12,5 +12,15 @@ body {
   height: 100vh;
 }
 
-a {
+a{
+  color: var(--cor-p1);
 }
+a:hover{
+  color: var(--cor-00);
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
