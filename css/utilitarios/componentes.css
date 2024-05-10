@@ -2,7 +2,15 @@
   --sombra-forte: 0px 4px 4px 2px #00000040;
   --sombra-fraca: 0px 2px 4px 0px #00000033;
   --briho: 0px 1px 2px 0px #075187cc;
-  --sombra-interna: inset 0px 2px 2px 0px #00000026;
+  --brilho-check: 0px 0px 4px 1px #07518799;
+  --sombra-interna-active: inset 0px 2px 2px 0px #00000026;
+  --sombra-interna-check: inset 0px 0px 4px 2px #000000cc;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --sombra-interna-check: inset 0px 0px 2px 1px #00000059;
+  }
 }
 
 .container {
@@ -62,7 +70,7 @@
 }
 .Btn-link:active {
   background: linear-gradient(var(--gradiente-primario2));
-  box-shadow: var(--sombra-fraca), var(--sombra-interna);
+  box-shadow: var(--sombra-fraca), var(--sombra-interna-active);
 }
 
 @media (prefers-color-scheme: light) {
@@ -76,7 +84,7 @@
   }
   .Btn-link:active {
     background: linear-gradient(var(--gradiente-primario2));
-    box-shadow: var(--sombra-fraca), var(--sombra-interna);
+    box-shadow: var(--sombra-fraca), var(--sombra-interna-active);
   }
 }
 /* imagem botao link*/
@@ -107,12 +115,58 @@
   cursor: pointer;
 }
 .Btn-primario:hover {
-
+  transform: scale(1.1);
 }
 
-.Btn-primario span{
+.Btn-primario span {
   height: 12px;
   width: 8px;
   background-color: var(--cor-p7);
   border-radius: 2px 16px 16px 2px;
+}
+
+/* botao ligth/dark mode */
+.btn-ligth-dark-mode:has(.ligth-dark-mode) {
+  width: var(--p10);
+  height: var(--p6);
+  border-radius: var(--p6);
+  border: 1px solid var(--cor-07);
+  position: relative;
+  display: block;
+  background-color: var(--cor-10);
+  box-shadow: var(--sombra-interna-check);
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+/* indicador do botao ligth/dark mode*/
+.btn-ligth-dark-mode:has(.ligth-dark-mode)::after {
+  content: "";
+  width: var(--p5);
+  height: var(--p5);
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: var(--cor-06);
+  border-radius: 100%;
+  box-shadow: var(--brilho-check);
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (prefers-color-scheme: light) {
+  .btn-ligth-dark-mode:has(.ligth-dark-mode)::after {
+    background: var(--cor-09);
+  }
+}
+/* movimentos do indicador*/
+.btn-ligth-dark-mode:has(.ligth-dark-mode:checked)::after {
+  right: var(--p3);
+  transform: translateX(calc(var(--p3) * -1));
+}
+/* escondendo chekcbox*/
+.ligth-dark-mode {
+  height: 0;
+  height: 0;
+  visibility: hidden;
 }
