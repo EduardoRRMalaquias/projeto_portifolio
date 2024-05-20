@@ -4,8 +4,10 @@
 @import "global/global.css";
 
 /* ultilitario */
-@import "utilitarios/espacamento.css";
-@import "utilitarios/cores.css";
-@import "utilitarios/tipografia.css";
-@import "utilitarios/componentes.css"
+@import "utility/espacamento.css";
+@import "utility/cores.css";
+@import "utility/tipografia.css";
 
+/* componentes */
+@import "components/componentes-globais.css";
+@import "components/componentes.css";
