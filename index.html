@@ -15,24 +15,27 @@
 
 <body>
   <header class="header-bg">
-    <div class="header">
-      <a href="./index.html#introducao"><img src="img/logo-grande.svg" alt="Eduardo Rodrigues Rangel Malaquias - Programador Front-End"></a>
+    <div class="header container">
+      <a class="logo" href="./index.html#introducao">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./img/logo-pequena.svg" type="image/svg+xml">
+          <img src="img/logo-grande.svg" alt="Eduardo Rodrigues Rangel Malaquias - Programador Front-End">
+        </picture>
+      </a>
       <nav>
-        <menu>
-          <li><a href="./index.html#introducao">Inicio</a></li>
-          <li><a href="./index.html#introducao">Sibre mim</a></li>
+        <menu class="subtitulo-principal-pequeno cor-01">
+          <li><a class="ativo" href="./index.html#introducao">Inicio</a></li>
+          <li><a href="./index.html#introducao">Sobre mim</a></li>
           <li><a href="./index.html#introducao">Projetos</a></li>
           <li><a href="./index.html#introducao">Contato</a></li>
-        </menu> 
+        </menu>
       </nav>
       <label class="btn-ligth-dark-mode" for="ligth-dark-mode">
-        <input class="ligth-dark-mode" type="checkbox" id="ligth-dark-mode">
+        <input class="ligth-dark-mode" type="checkbox" id="ligth-dark-mode" />
       </label>
+      <span class="!!!MANUHABURGUER!!!"></span>
     </div>
   </header>
-
-
-  
 </body>
 
 </html>

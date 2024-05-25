@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
-  background-color: var(--cor-10);
+ /* background-color: var(--cor-10);*/
   font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -14,10 +15,8 @@ ul, menu{
 }
 
 a{
-  color: var(--cor-p1);
-}
-a:hover{
-  color: var(--cor-00);
+  color: inherit;
+  display: inline-block;
 }
 
 img{

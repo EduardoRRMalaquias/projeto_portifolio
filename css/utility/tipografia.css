@@ -38,50 +38,50 @@
 /* titulos e subtitulos */
 .titulo-principal {
   font: var(--font-display-XGG);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 .subtitulo-principal-grande {
   font: var(--font-primaria-XG);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 .subtitulo-principal-medio {
   font: var(--font-primaria-m);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 .subtitulo-principal-pequeno {
   font: var(--font-primaria-pp-xb);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 .subtitulo-secundario-grande {
   font: var(--font-display-m);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 .subtitulo-decorativo {
   font: var(--font-display-XG);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 /* textos funcionais (botoes e links)*/
 .texto-funcional1-grande {
   font: var(--font-primaria-GG);
   text-transform: uppercase;
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 .texto-funcional1-pequeno {
   font: var(--font-primaria-pp-b);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
   text-transform: uppercase;
 }
 
 .texto-funcional2 {
   font: var(--font-primaria-pp);
-  letter-spacing: 1.5;
+  letter-spacing: 1.5%;
 }
 
 /* textos*/

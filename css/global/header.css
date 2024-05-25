@@ -1,0 +1,91 @@
+.header-bg {
+  background-color: var(--cor-10);
+  padding: var(--32p) var(--60p);
+}
+
+.header {
+  display: flex;
+  gap: var(--60p);
+  align-items: center;
+}
+
+.header nav {
+  display: block;
+  text-align: left;
+  justify-self: end;
+  margin-left: auto;
+}
+
+.header menu {
+  display: flex;
+  align-items: center;
+  gap: var(--36p);
+}
+
+.header a {
+  text-decoration: none;
+}
+.header a:hover {
+  color: var(--cor-p4);
+}
+
+/* animaçã do menu ativo*/
+.header a.ativo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 2px;
+}
+.header a.ativo:hover {
+  color: inherit;
+}
+
+
+.header .btn-ligth-dark-mode::before {
+  content: "";
+  display: inline-block;
+  width: var(--12p);
+  height: var(--20p);
+  background: url(../../img/decoracao/dec-menu.svg);
+  position: absolute;
+  left: calc(var(--20p) * -1);
+}
+
+.header span{
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 58rem){
+  .header {
+    gap: var(--32p);
+  }
+  .header nav {
+   display: none;
+  }
+  .header span{
+    display: block;
+  }
+  .header .btn-ligth-dark-mode {
+   margin-left: auto;
+  }
+  
+}
+
+@media only screen and (max-width: 28rem){
+  .header-bg {
+    border-top: var(--4p) solid var(--cor-p4);
+  }
+  .header .btn-ligth-dark-mode {
+    display: none;
+  }
+  .header span{
+    display: block;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+  --4p: 0.25rem; /*4px*/
+  --8p: 0.5rem; /*8px*/
+  --12p: 0.75rem; /*12px*/
+  --16p: 1rem; /*16px*/
+  --20p: 1.25rem; /*20px*/
+  --28p: 1.75rem; /*28px*/
+  --32p: 2rem; /*32px*/
+  --36p: 2.25rem; /*36px*/
+  --40p: 2.5rem; /*40px*/
+  --48p: 3rem; /*48px*/
+  --60p: 3.75rem; /*60px*/
+  --80p: 5rem; /*80px*/
+  --120p: 7.5rem; /*120px*/
+  --160p: 10rem; /*160px*/
+  --200p: 12.5rem; /*200*/
+}
+
+.p-g {
+  padding-top: var(--40p);
+  padding-left: var(--60p);
+  padding-right: var(--60p);
+  padding-bottom: var(--40p);
+}
+
+.p-m {
+  padding-top: var(--32p);
+  padding-left: var(--40p);
+  padding-right: var(--40p);
+  padding-bottom: var(--32p);
+}
+
+.p-p {
+  padding-top: var(--32p);
+  padding-left: var(--32p);
+  padding-right: var(--32p);
+  padding-bottom: var(--32p);
+}
+
+@media only screen and (max-width: 38rem) {
+  .p-g {
+    padding-top: var(--40p);
+    padding-left: var(--20p);
+    padding-right: var(--20p);
+    padding-bottom: var(--40p);
+  }
+
+  .p-m {
+    padding-top: var(--32p);
+    padding-left: var(--20p);
+    padding-right: var(--20p);
+    padding-bottom: var(--32p);
+  }
+}
