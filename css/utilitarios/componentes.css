@@ -116,7 +116,8 @@
   transition: transform 0.3s, box-shadow 0.1s;
 }
 .Btn-primario:hover {
-
+  transform: scale(1.1);
+  box-shadow: var(--brilho-forte);
 }
 
 .Btn-primario span{
