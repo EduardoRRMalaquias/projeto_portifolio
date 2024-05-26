@@ -19,7 +19,7 @@
   --font-primaria-GG: 600 2rem/1.25 "Poppins", sans-serif;
   --font-display-G: 700 1.75rem/1.5 "Lemon Milk", sans-serif;
   --font-primaria-G: 700 1.75rem/1.5 "Poppins", sans-serif;
-  --font-display-m: 300 1.5rem/1.3 "Lemon Milk", sans-serif;
+  --font-display-m: 300 1.5rem/1.5 "Lemon Milk", sans-serif;
   --font-primaria-m: 700 1.5rem/1.3 "Poppins", sans-serif;
   --font-texto-m: 400 1.5rem/1.15 "Roboto", sans-serif;
   --font-primaria-p: 600 1.25rem/1.5 "Poppins", sans-serif;
@@ -38,50 +38,50 @@
 /* titulos e subtitulos */
 .titulo-principal {
   font: var(--font-display-XGG);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-principal-grande {
   font: var(--font-primaria-XG);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-principal-medio {
   font: var(--font-primaria-m);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-principal-pequeno {
   font: var(--font-primaria-pp-xb);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-secundario-grande {
   font: var(--font-display-m);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 .subtitulo-decorativo {
   font: var(--font-display-XG);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 /* textos funcionais (botoes e links)*/
 .texto-funcional1-grande {
   font: var(--font-primaria-GG);
   text-transform: uppercase;
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 .texto-funcional1-pequeno {
   font: var(--font-primaria-pp-b);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
   text-transform: uppercase;
 }
 
 .texto-funcional2 {
   font: var(--font-primaria-pp);
-  letter-spacing: 1.5%;
+  letter-spacing: 1.5;
 }
 
 /* textos*/

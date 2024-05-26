@@ -1,0 +1,102 @@
+.introducao {
+  background: url(../../img/introducao-fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  padding: var(--20p) var(--60p) var(--200p) var(--60p);
+}
+
+.introducao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--40p);
+  position: relative;
+  padding-right: var(--40p);
+}
+
+.introducao-informacao {
+  background: url(../../img/decoracao/dec.svg) no-repeat top right;
+}
+
+.introducao-informacao h2 {
+  margin-bottom: var(--20p);
+}
+.introducao-informacao h2 span {
+  display: block;
+}
+
+/* decoração titulo princiapal*/
+.introducao-informacao h1 {
+  max-width: 10ch;
+  position: relative;
+  margin-bottom: var(--28p);
+}
+.introducao-informacao h1::before {
+  content: "";
+  display: block;
+  width: var(--8p);
+  height: var(--12p);
+  background: linear-gradient(var(--gradiente-primario2));
+  position: absolute;
+  top: 26px;
+  left: calc(var(--12p) * -1);
+}
+
+.introducao-informacao .lista-links {
+  margin-bottom: var(--80p);
+}
+
+.diferencial {
+  display: flex;
+  gap: var(--20p);
+  max-width: max-content;
+  margin: auto;
+}
+
+.diferencial svg {
+  margin-bottom: var(--12p);
+}
+
+.diferencial h3 {
+  max-width: 12ch;
+  margin-bottom: var(--12p);
+}
+
+.diferencial p {
+  min-width: 20ch;
+  max-width: 26ch;
+}
+
+.introducao-conteudo picture {
+  margin-top: calc(var(--60p) * -1);
+  margin-bottom: calc(var(--60p) * -1);
+  width: 100%;
+}
+.introducao-conteudo picture img {
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+  border-radius: var(--8p);
+}
+
+@media only screen and (max-width: 73rem) {
+  .introducao {
+    padding-top: var(--12p);
+    padding-bottom: calc(var(--200p) + 60px);
+  }
+  .introducao-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .introducao-conteudo picture {
+    margin-top: 0;
+    margin-bottom: calc(var(--120p) * -1);
+  }
+  .introducao-conteudo picture img {
+    border-radius: var(--32p);
+  }
+}
+
+@media only screen and (max-width: 58rem) {
+  
+}

@@ -11,4 +11,7 @@
 /* componentes */
 @import "components/componentes-globais.css";
 @import "components/componentes.css";
-@import "global/header.css"
+@import "global/header.css";
+
+/* conteudo*/
+@import "conteudo/introducao.css";

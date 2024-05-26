@@ -64,6 +64,11 @@
   }
 }
 
+.lista-links{
+  display: flex;
+  gap: var(--28p);
+}
+
 
 
 

@@ -57,15 +57,11 @@
 }
 
 /* imagem botao link*/
-.btn-link span {
-  width: var(--16p);
-  height: var(--16p);
-  background-color: var(--cor-01);
-  border-radius: var(--4p);
+.btn-link svg {
+  fill: var(--cor-01);
 }
-
-.btn-link:hover span {
-  background-color: var(--cor-p7);
+.btn-link:hover svg {
+  fill: var(--cor-p7);
 }
 
 /*=================================================
