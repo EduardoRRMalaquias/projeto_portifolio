@@ -103,6 +103,16 @@
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 68rem) {
+  .titulo-principal {
+    font: var(--font-display-XG);
+  }
+
+  .texto-terciario {
+    font: var(--font-texto-xp);
+  }
+}
+
 @media only screen and (max-width: 38rem /* 600px */) {
   /* titulos e subtitulos */
   .titulo-principal {
@@ -138,9 +148,5 @@
 
   .texto-secundario {
     font: var(--font-texto-pp);
-  }
-
-  .texto-terciario {
-    font: var(--font-texto-xp);
   }
 }

@@ -6,11 +6,17 @@
   --brilho-check: 0px 0px 4px 1px #07518799;
   --sombra-interna-active: inset 0px 2px 2px 0px #00000026;
   --sombra-interna-check: inset 0px 0px 4px 2px #000000cc;
+  --dec-pequeno: url(../../img/decoracao/dec-menu.svg);
+  --decoracao: url(../../img/decoracao/dec.svg);
+  --fundo-introducao: url(../../img/introducao-fundo.png);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --sombra-interna-check: inset 0px 0px 2px 1px #00000059;
+    --dec-pequeno: url(../../img/decoracao/dec-menu-ligth.svg);
+    --decoracao: url(../../img/decoracao/dec-ligth.svg);
+    --fundo-introducao: url(../../img/introducao-fundo-ligth.png);
   }
 }
 

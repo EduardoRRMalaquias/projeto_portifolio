@@ -1,10 +1,6 @@
 .introducao {
-  background: url(../../img/introducao-fundo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-
-  padding: var(--20p) var(--60p) var(--200p) var(--60p);
+  background: var(--fundo-introducao) no-repeat center bottom/cover;
+  padding: var(--20p) var(--20p) var(--200p) var(--20p);
 }
 
 .introducao-conteudo {
@@ -16,14 +12,11 @@
 }
 
 .introducao-informacao {
-  background: url(../../img/decoracao/dec.svg) no-repeat top right;
+  background: var(--decoracao) no-repeat top right;
 }
 
 .introducao-informacao h2 {
   margin-bottom: var(--20p);
-}
-.introducao-informacao h2 span {
-  display: block;
 }
 
 /* decoração titulo princiapal*/
@@ -80,7 +73,16 @@
   border-radius: var(--8p);
 }
 
-@media only screen and (max-width: 73rem) {
+@media only screen and (max-width: 68rem) {
+  .introducao-conteudo {
+    gap: var(--12p);
+  }
+  .introducao-informacao h1::before {
+    top: 14px;
+  }
+}
+
+@media only screen and (max-width: 58rem) {
   .introducao {
     padding-top: var(--12p);
     padding-bottom: calc(var(--200p) + 60px);
@@ -95,8 +97,10 @@
   .introducao-conteudo picture img {
     border-radius: var(--32p);
   }
-}
-
-@media only screen and (max-width: 58rem) {
-  
+  .introducao-informacao h2 br {
+    display: none;
+  }
+  .diferencial {
+    margin-bottom: var(--16p);
+  }
 }

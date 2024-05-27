@@ -52,7 +52,7 @@
   display: inline-block;
   width: var(--12p);
   height: var(--20p);
-  background: url(../../img/decoracao/dec-menu.svg);
+  background: var(--dec-pequeno);
   position: absolute;
   left: calc(var(--20p) * -1);
 }
@@ -62,7 +62,7 @@
   width: 20px;
   height: 20px;
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--cor-00);
 }
 
 @media only screen and (max-width: 58rem) {
