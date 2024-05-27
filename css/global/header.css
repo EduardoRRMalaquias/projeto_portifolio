@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (max-width: 28rem) {
+@media only screen and (max-width: 38rem) {
   .header-bg {
     border-top: var(--4p) solid var(--cor-p4);
   }

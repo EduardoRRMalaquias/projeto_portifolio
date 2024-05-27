@@ -9,6 +9,7 @@
   gap: var(--40p);
   position: relative;
   padding-right: var(--40p);
+  max-height: 600px;
 }
 
 .introducao-informacao {
@@ -47,10 +48,6 @@
   margin: auto;
 }
 
-.diferencial svg {
-  margin-bottom: var(--12p);
-}
-
 .diferencial h3 {
   max-width: 12ch;
   margin-bottom: var(--12p);
@@ -61,12 +58,12 @@
   max-width: 26ch;
 }
 
-.introducao-conteudo picture {
+.introducao-conteudo .imagem-perfil {
   margin-top: calc(var(--60p) * -1);
   margin-bottom: calc(var(--60p) * -1);
   width: 100%;
 }
-.introducao-conteudo picture img {
+.introducao-conteudo .imagem-perfil img {
   object-fit: cover;
   object-position: left;
   height: 100%;
@@ -74,9 +71,6 @@
 }
 
 @media only screen and (max-width: 68rem) {
-  .introducao-conteudo {
-    gap: var(--12p);
-  }
   .introducao-informacao h1::before {
     top: 14px;
   }
@@ -89,12 +83,13 @@
   }
   .introducao-conteudo {
     grid-template-columns: 1fr;
+    max-height: 900px;
   }
-  .introducao-conteudo picture {
+  .introducao-conteudo .imagem-perfil {
     margin-top: 0;
     margin-bottom: calc(var(--120p) * -1);
   }
-  .introducao-conteudo picture img {
+  .introducao-conteudo .imagem-perfil img {
     border-radius: var(--32p);
   }
   .introducao-informacao h2 br {
@@ -103,4 +98,7 @@
   .diferencial {
     margin-bottom: var(--16p);
   }
+}
+
+@media only screen and (max-width: 38rem /* 600px */) {
 }

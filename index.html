@@ -16,10 +16,12 @@
 <body>
   <header class="header-bg">
     <div class="header container">
-      <a class="logo" href="./index.html#introducao">
-        <picture>
+      <a href="./index.html#introducao">
+        <picture class="logo">
+          <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./img/logo-pequena-ligth.svg" type="image/svg+xml">
           <source media="(max-width: 600px)" srcset="./img/logo-pequena.svg" type="image/svg+xml">
-          <img src="img/logo-grande.svg" alt="Eduardo Rodrigues Rangel Malaquias - Programador Front-End">
+          <source media="(prefers-color-scheme: light)" srcset="./img/logo-grande-ligth.svg" type="image/svg+xml">
+          <img src="./img/logo-grande.svg" alt="Eduardo Rodrigues Rangel Malaquias - Programador Front-End">
         </picture>
       </a>
       <nav>
@@ -63,47 +65,32 @@
         </ul>
         <div class="diferencial">
           <div class="diferencial-item">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.14177 20.5911C3.59139 20.5911 3.12023 20.3925 2.72829 19.9951C2.33635 19.5978 2.14038 19.1202 2.14038 18.5623V6.3892C2.14038 5.83126 2.33635 5.35364 2.72829 4.95633C3.12023 4.55901 3.59139 4.36035 4.14177 4.36035H20.1529C20.7033 4.36035 21.1744 4.55901 21.5664 4.95633C21.9583 5.35364 22.1543 5.83126 22.1543 6.3892V18.5623C22.1543 19.1202 21.9583 19.5978 21.5664 19.9951C21.1744 20.3925 20.7033 20.5911 20.1529 20.5911H4.14177ZM4.14177 18.5623H20.1529V8.41804H4.14177V18.5623ZM7.6442 17.5479L6.24323 16.1277L8.82002 13.4902L6.21821 10.8527L7.6442 9.43247L11.647 13.4902L7.6442 17.5479ZM12.1473 17.5479V15.519H18.1515V17.5479H12.1473Z" fill="url(#paint0_linear_825_460)" />
-              <defs>
-                <linearGradient id="paint0_linear_825_460" x1="12.2249" y1="20.5911" x2="12.2249" y2="4.36035" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#4CA8CF" />
-                  <stop offset="1" stop-color="#82D1F2" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(prefers-color-scheme: light)" srcset="./img/icones/dedicado-ligth.svg" type="image/svg+xml">
+              <img src="./img/icones/dedicado.svg" alt="">
+            </picture>
             <h3 class="subtitulo-principal-pequeno cor-04">Dedicado a proframação</h3>
             <p class="texto-terciario cor-05">Totalmente dedicado a estudar e realizar projetos Front-End Frelancers ou de estudo.</p>
           </div>
           <div class="diferencial-item">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.2794 9.66346L8.77694 6.11298L12.2794 2.5625L15.7818 6.11298L12.2794 9.66346ZM1.27173 20.8221V16.7644C1.27173 16.1896 1.4677 15.7077 1.85964 15.3189C2.25158 14.93 2.72274 14.7356 3.27312 14.7356H6.55039C6.88396 14.7356 7.20085 14.8201 7.50105 14.9892C7.80126 15.1583 8.0431 15.3865 8.22656 15.6739C8.71023 16.3333 9.30647 16.849 10.0153 17.2209C10.7241 17.5929 11.4788 17.7788 12.2794 17.7788C13.0966 17.7788 13.8596 17.5929 14.5685 17.2209C15.2773 16.849 15.8652 16.3333 16.3322 15.6739C16.549 15.3865 16.8033 15.1583 17.0952 14.9892C17.3871 14.8201 17.6915 14.7356 18.0083 14.7356H21.2856C21.8527 14.7356 22.328 14.93 22.7116 15.3189C23.0952 15.7077 23.287 16.1896 23.287 16.7644V20.8221H16.2822V18.5143C15.6984 18.937 15.0688 19.2582 14.3933 19.478C13.7179 19.6978 13.0132 19.8077 12.2794 19.8077C11.5622 19.8077 10.8617 19.6936 10.1779 19.4653C9.4941 19.2371 8.86033 18.9116 8.27659 18.4889V20.8221H1.27173ZM4.27381 13.7212C3.4399 13.7212 2.73108 13.4253 2.14734 12.8335C1.5636 12.2418 1.27173 11.5232 1.27173 10.6779C1.27173 9.81562 1.5636 9.09285 2.14734 8.50956C2.73108 7.92626 3.4399 7.63462 4.27381 7.63462C5.1244 7.63462 5.8374 7.92626 6.4128 8.50956C6.9882 9.09285 7.2759 9.81562 7.2759 10.6779C7.2759 11.5232 6.9882 12.2418 6.4128 12.8335C5.8374 13.4253 5.1244 13.7212 4.27381 13.7212ZM20.2849 13.7212C19.451 13.7212 18.7422 13.4253 18.1585 12.8335C17.5747 12.2418 17.2828 11.5232 17.2828 10.6779C17.2828 9.81562 17.5747 9.09285 18.1585 8.50956C18.7422 7.92626 19.451 7.63462 20.2849 7.63462C21.1355 7.63462 21.8485 7.92626 22.4239 8.50956C22.9993 9.09285 23.287 9.81562 23.287 10.6779C23.287 11.5232 22.9993 12.2418 22.4239 12.8335C21.8485 13.4253 21.1355 13.7212 20.2849 13.7212Z" fill="url(#paint0_linear_825_455)" />
-              <defs>
-                <linearGradient id="paint0_linear_825_455" x1="12.3647" y1="20.8221" x2="12.3647" y2="2.5625" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#4CA8CF" />
-                  <stop offset="1" stop-color="#82D1F2" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(prefers-color-scheme: light)" srcset="./img/icones/comunicativo-ligth.svg" type="image/svg+xml">
+              <img src="./img/icones/comunicativo.svg" alt="">
+            </picture>
             <h3 class="subtitulo-principal-pequeno cor-04">Comunicativo e Proativo</h3>
             <p class="texto-terciario cor-05">Boa comunicação e com facilidade e experiencia de trabalho em equipe</p>
           </div>
           <div class="diferencial-item">
-            <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.0319 18.5911V2.36035H21.0423V18.5911H6.0319ZM2.2793 22.6488V6.41804H4.1556V20.62H17.2897V22.6488H2.2793ZM12.599 4.3892V11.4902L14.9443 9.96852L17.2897 11.4902V4.3892H12.599Z" fill="url(#paint0_linear_825_449)" />
-              <defs>
-                <linearGradient id="paint0_linear_825_449" x1="11.7335" y1="22.6488" x2="11.7335" y2="2.36035" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#4CA8CF" />
-                  <stop offset="1" stop-color="#82D1F2" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <picture>
+              <source media="(prefers-color-scheme: light)" srcset="./img/icones/qualificado-ligth.svg" type="image/svg+xml">
+              <img src="./img/icones/qualificado.svg" alt="">
+            </picture>
             <h3 class="subtitulo-principal-pequeno cor-04">Qualificado na Área</h3>
             <p class="texto-terciario cor-05">Formado em técnico em Informática, Cursando Sistemas da Informação e cursos online</p>
           </div>
         </div>
       </div>
-      <picture>
+      <picture class="imagem-perfil">
         <source media="(max-width: 928px)" srcset="img/perfil-tablet.jpg" type="image/jpg">
         <img src="img/perfil-desk.jpg" alt="Programador Front-End em seu local de trabalho Home Office">
       </picture>
