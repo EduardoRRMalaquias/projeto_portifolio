@@ -51,4 +51,11 @@
     padding-right: var(--20p);
     padding-bottom: var(--32p);
   }
+
+  .p-p {
+    padding-top: var(--20p);
+    padding-left: var(--20p);
+    padding-right: var(--20p);
+    padding-bottom: var(--20p);
+  }
 }

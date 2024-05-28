@@ -32,6 +32,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--32p);
+  margin-bottom: 16px;
 }
 
 .habilidades-item{
@@ -40,6 +41,10 @@
   flex-direction: column;
   align-items: center;
   position: relative
+}
+.habilidades-item figcaption{ 
+  max-width: max-content;
+  text-align: center;
 }
 
 .imagem-houver{
@@ -52,4 +57,27 @@
 
 .imagem-houver:hover{
   opacity: 0;
+}
+
+.habilidades span{
+  display: block;
+  margin-bottom: var(--20p);
+
+}
+
+@media only screen and (max-width: 58rem) {
+  .informaçoes-sobre{
+    grid-template-columns: 1fr;
+  }
+
+  .habilidades{
+    grid-column: initial;
+    grid-row: initial;
+  }
+}
+
+@media only screen and (max-width: 26rem /* 600px */) {
+  .tecnologias{
+    justify-content: center;
+  }
 }

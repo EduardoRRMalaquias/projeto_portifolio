@@ -112,6 +112,10 @@
   .texto-terciario {
     font: var(--font-texto-xp);
   }
+
+  .subtitulo-secundario-grande {
+    font: var(--font-display-pp);
+  }
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
@@ -126,10 +130,6 @@
 
   .subtitulo-principal-medio {
     font: var(--font-primaria-p-b);
-  }
-
-  .subtitulo-secundario-grande {
-    font: var(--font-display-pp);
   }
 
   .subtitulo-decorativo {
