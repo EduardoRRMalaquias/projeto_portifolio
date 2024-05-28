@@ -1,0 +1,55 @@
+.sobre-bg {
+  padding: 0 var(--32p) 0 var(--32p);
+}
+
+.sobre h2{
+  position: relative;
+  top: calc(var(--32p) * -1);
+}
+
+.sobre h3{
+  margin-bottom: var(--36p);
+  width: 100%;
+}
+
+.informaçoes-sobre{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--40p) var(--32p);
+}
+
+.informaçoes-sobre-item h4{
+  margin-bottom: var(--20p);
+  width: 100%;
+}
+
+.habilidades{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.tecnologias{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--32p);
+}
+
+.habilidades-item{
+  max-width: var(--60p);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative
+}
+
+.imagem-houver{
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  opacity: 100;
+  transition: 0.5s;
+}
+
+.imagem-houver:hover{
+  opacity: 0;
+}

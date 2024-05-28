@@ -30,7 +30,8 @@
   --font-display-pp: 300 1rem/1.5 "Lemon Milk", sans-serif;
   --font-primaria-pp: 500 1rem/1.5 "Poppins", sans-serif;
   --font-texto-pp: 400 1rem/1.25 "Roboto", sans-serif;
-  --font-primaria-xp: italic 900 0.75rem/1.5 "Poppins", sans-serif;
+  --font-primaria-xp: 500 0.75rem/1.25 "Poppins", sans-serif;
+  --font-primaria-xp-b: italic 900 0.75rem/1.5 "Poppins", sans-serif;
   --font-texto-xp: 400 0.75rem/1.5 "Roboto", sans-serif;
 }
 
@@ -99,7 +100,7 @@
 }
 
 .destaque {
-  font: var(--font-primaria-xp);
+  font: var(--font-primaria-xp-b);
   text-transform: uppercase;
 }
 
@@ -141,6 +142,10 @@
     font: var(--font-primaria-p);
   }
 
+  .texto-funcional2 {
+    font: var(--font-primaria-xp);
+  }
+
   /* textos*/
   .texto-primario {
     font: var(--font-texto-pp);
@@ -148,5 +153,11 @@
 
   .texto-secundario {
     font: var(--font-texto-pp);
+  }
+}
+
+@media only screen and (max-width: 26rem) {
+  .titulo-principal {
+    font: var(--font-display-m);
   }
 }

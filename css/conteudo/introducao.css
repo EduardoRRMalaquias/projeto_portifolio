@@ -26,16 +26,6 @@
   position: relative;
   margin-bottom: var(--28p);
 }
-.introducao-informacao h1::before {
-  content: "";
-  display: block;
-  width: var(--8p);
-  height: var(--12p);
-  background: linear-gradient(var(--gradiente-primario2));
-  position: absolute;
-  top: 26px;
-  left: calc(var(--12p) * -1);
-}
 
 .introducao-informacao .lista-links {
   margin-bottom: var(--80p);
@@ -70,11 +60,6 @@
   border-radius: var(--8p);
 }
 
-@media only screen and (max-width: 68rem) {
-  .introducao-informacao h1::before {
-    top: 14px;
-  }
-}
 
 @media only screen and (max-width: 58rem) {
   .introducao {
@@ -101,6 +86,10 @@
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
+  .introducao-conteudo {
+    padding-right: var(--20p);
+    max-height: 1000px;
+  }
   .introducao-informacao h1::before {
     width: var(--16p);
     height: var(--8p);
@@ -111,8 +100,39 @@
     margin-bottom: var(--12p);
   }
 
+  .introducao-informacao .lista-links {
+    margin-bottom: var(--20p);
+  }
+
   .diferencial {
     flex-direction: column;
+    gap: var(--12p);
+  }
+
+  .diferencial-item {
+    padding: var(--12p);
+    background-color: var(--cor-08);
+    border-radius: var(--8p);
+  }
+
+  .diferencial h3 {
+    max-width: initial;
+  }
+
+  .diferencial p {
+    max-width: 50ch;
+  }
+
+  .introducao-conteudo .imagem-perfil {
+    margin-bottom: calc(var(--80p) * -1);
   }
 }
 
+@media only screen and (max-width: 26rem /* 600px */) {
+  .introducao-informacao {
+    background: none;
+  }
+  .introducao-informacao h2 {
+    max-width: max-content;
+  }
+}
