@@ -73,8 +73,15 @@
 .lista-links{
   display: flex;
   gap: var(--28p);
+  max-width: max-content;
 }
 
+@media only screen and (max-width: 38rem /* 600px */) {
+  .lista-links{
+    gap: 0;
+    margin: 0 auto;
+  }
+}
 
 
 

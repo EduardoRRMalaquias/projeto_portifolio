@@ -101,4 +101,18 @@
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
+  .introducao-informacao h1::before {
+    width: var(--16p);
+    height: var(--8p);
+    position: initial;
+  }
+
+  .introducao-informacao h2 {
+    margin-bottom: var(--12p);
+  }
+
+  .diferencial {
+    flex-direction: column;
+  }
 }
+
