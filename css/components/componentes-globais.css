@@ -111,6 +111,11 @@
   }
 }
 
-
+.link{
+  color: var(--cor-p1);
+}
+.link:hover{
+  color: var(--cor-00);
+}
 
 
