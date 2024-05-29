@@ -9,6 +9,7 @@
   --dec-pequeno: url(../../img/decoracao/dec-menu.svg);
   --decoracao: url(../../img/decoracao/dec.svg);
   --fundo-introducao: url(../../img/introducao-fundo.png);
+  --fundo-experiencia: url(../../img/bg-experiencias.jpg)
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,6 +18,7 @@
     --dec-pequeno: url(../../img/decoracao/dec-menu-ligth.svg);
     --decoracao: url(../../img/decoracao/dec-ligth.svg);
     --fundo-introducao: url(../../img/introducao-fundo-ligth.png);
+    --fundo-experiencia: url(../../img/bg-experiencias-ligth.jpg)
   }
 }
 

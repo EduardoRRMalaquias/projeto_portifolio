@@ -1,4 +1,53 @@
-.experiencia{
+.experiencia {
   padding: var(--40p) var(--20p) var(--20p) var(--20p);
-  background: url(../);
+  background: var(--fundo-experiencia) no-repeat center/cover;
+  position: relative;
+}
+
+.profissional,
+.educacional {
+  display: grid;
+  gap: var(--20p);
+}
+.profissional {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--20p);
+}
+.educacional {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profissional .destaque {
+  position: absolute;
+  top: var(--12p);
+}
+
+.experiencia-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.experiencia-item h4 {
+  margin-bottom: var(--16p);
+}
+
+.experiencia-item h4 + span {
+  display: block;
+  margin-bottom: var(--20p);
+}
+
+.experiencia-item p,
+.experiencia-item ul {
+  margin-bottom: var(--40p);
+}
+
+.experiencia-item ul{
+  flex-grow: 2;
+  list-style-type: disc;
+  padding-left: var(--16p);
+}
+
+.experiencia-item .btn-primario {
+  margin-left: auto;
 }
