@@ -14,5 +14,5 @@
 @import "global/header.css";
 
 /* conteudo*/
-@import "conteudo/introducao.css";
-@import "conteudo/sobre.css";
+@import "content/introducao.css";
+@import "content/sobre.css";

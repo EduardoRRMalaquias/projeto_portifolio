@@ -90,6 +90,7 @@
     padding-right: var(--20p);
     max-height: 1000px;
   }
+  
   .introducao-informacao h1::before {
     width: var(--16p);
     height: var(--8p);

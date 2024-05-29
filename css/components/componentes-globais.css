@@ -111,11 +111,6 @@
   }
 }
 
-@media only screen and (max-width: 38rem /* 600px */) {
-  .introducao-conteudo {
-    padding-right: var(--20p);
-    max-height: 1000px;
-  }
-}
+
 
 
