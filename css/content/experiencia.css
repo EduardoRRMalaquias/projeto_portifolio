@@ -8,9 +8,10 @@
 .educacional {
   display: grid;
   gap: var(--20p);
+  overflow-x: auto;
 }
 .profissional {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(524px, 1fr));
   margin-bottom: var(--20p);
 }
 .educacional {
@@ -22,7 +23,7 @@
   top: var(--12p);
 }
 
-.experiencia-item{
+.experiencia-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,9 +33,17 @@
   margin-bottom: var(--16p);
 }
 
+.educacional h4 {
+  max-width: 10ch;
+}
+
 .experiencia-item h4 + span {
   display: block;
   margin-bottom: var(--20p);
+}
+
+.experiencia-item span ul {
+  list-style: none;
 }
 
 .experiencia-item p,
@@ -42,7 +51,7 @@
   margin-bottom: var(--40p);
 }
 
-.experiencia-item ul{
+.experiencia-item ul {
   flex-grow: 2;
   list-style-type: disc;
   padding-left: var(--16p);
