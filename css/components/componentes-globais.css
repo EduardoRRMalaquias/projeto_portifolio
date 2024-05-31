@@ -72,7 +72,7 @@
   }
 }
 
-.lista-links{
+.lista-links, .lista-link{
   display: flex;
   gap: var(--28p);
   align-items: center;
