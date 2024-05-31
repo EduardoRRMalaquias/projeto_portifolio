@@ -72,7 +72,9 @@
   }
 }
 
-.lista-links, .lista-link{
+
+
+.lista-links, .flex{
   display: flex;
   gap: var(--28p);
   align-items: center;
@@ -94,6 +96,14 @@
   }
 }
 
+.link{
+  color: var(--cor-p1);
+}
+.link:hover{
+  color: var(--cor-00);
+}
+
+
 /* decoração titulo */
 
 .decoracao::before{
@@ -113,11 +123,5 @@
   }
 }
 
-.link{
-  color: var(--cor-p1);
-}
-.link:hover{
-  color: var(--cor-00);
-}
 
 
