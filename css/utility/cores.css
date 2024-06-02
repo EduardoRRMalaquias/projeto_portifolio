@@ -88,6 +88,9 @@
 .cor-05 {
   color: var(--cor-05);
 }
+.cor-05 strong {
+  color: var(--cor-03);
+}
 
 .cor-04 {
   color: var(--cor-04);
@@ -95,6 +98,9 @@
 
 .cor-03 {
   color: var(--cor-03);
+}
+.cor-03 strong {
+  color: var(--cor-02);
 }
 
 .cor-02 {

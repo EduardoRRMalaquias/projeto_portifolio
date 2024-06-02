@@ -104,6 +104,10 @@
   text-transform: uppercase;
 }
 
+strong {
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 68rem) {
   .titulo-principal {
     font: var(--font-display-XG);
@@ -155,4 +159,3 @@
     font: var(--font-texto-pp);
   }
 }
-

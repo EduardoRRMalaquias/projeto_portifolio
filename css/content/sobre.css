@@ -1,11 +1,5 @@
-
-.sobre{
+.sobre {
   padding: 0 var(--32p) 0 var(--32p);
-}
-
-.sobre h2 {
-  position: relative;
-  top: calc(var(--32p) * -1);
 }
 
 .sobre h3 {

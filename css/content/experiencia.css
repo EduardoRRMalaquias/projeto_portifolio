@@ -1,7 +1,6 @@
 .experiencia {
-  padding: var(--40p) var(--20p) var(--20p) var(--20p);
+  padding: 0 var(--20p) var(--20p) var(--20p);
   background: var(--fundo-experiencia) no-repeat center/cover;
-  position: relative;
 }
 
 .profissional,
@@ -10,17 +9,39 @@
   gap: var(--20p);
   overflow-x: auto;
 }
-.profissional {
-  grid-template-columns: repeat(auto-fill, minmax(524px, 1fr));
-  margin-bottom: var(--20p);
+/* barra de rolagem */
+.profissional::-webkit-scrollbar,
+.educacional::-webkit-scrollbar {
+  height: 12px;
 }
+.profissiona::-webkit-scrollbar-track,
+.educacional::-webkit-scrollbar-track {
+  background: transparent;
+}
+.profissional::-webkit-scrollbar-thumb,
+.educacional::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 30%);
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+.profissional {
+  grid-template-columns: repeat(2, minmax(760px, 1fr));
+  margin-bottom: var(--20p);
+  padding-top: var(--40p);
+}
+
 .educacional {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(500px, 1fr));
+}
+
+.profissional .card {
+  position: relative;
 }
 
 .profissional .destaque {
   position: absolute;
-  top: var(--12p);
+  top: calc(var(--28p) * -1);
 }
 
 .experiencia-item {
@@ -51,6 +72,10 @@
   margin-bottom: var(--40p);
 }
 
+.experiencia-item span ul {
+  list-style-type: none;
+}
+
 .experiencia-item ul {
   flex-grow: 2;
   list-style-type: disc;
@@ -59,4 +84,26 @@
 
 .experiencia-item .btn-primario {
   margin-left: auto;
+}
+
+@media only screen and (max-width: 58rem) {
+  .profissional {
+    grid-template-columns: repeat(2, minmax(512px, 1fr));
+  }
+  .educacional {
+    grid-template-columns: repeat(3, minmax(460px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 38rem) {
+  .experiencia {
+    padding: 0 var(--12p) var(--12p) var(--12p);
+  }
+
+  .profissional {
+    grid-template-columns: repeat(2, minmax(420px, 1fr));
+  }
+  .educacional {
+    grid-template-columns: repeat(3, minmax(360px, 1fr));
+  }
 }

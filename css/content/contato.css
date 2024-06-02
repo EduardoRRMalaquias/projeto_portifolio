@@ -1,0 +1,33 @@
+.contato-bg{
+  padding: var(--32p) var(--60p);
+}
+
+.contato h2{
+  margin-bottom: var(--32p);
+}
+
+.contato > p{
+  margin-bottom: var(--20p);
+}
+
+.contato-icone{
+  width: 48px;
+  height: 48px;
+  background-color: var(--cor-p4);
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.contato h3{
+  display: inline-block;
+  margin-bottom: var(--32p);
+}
+
+
+.copy-area{
+  padding: var(--8p);
+  border: 2px solid var(--cor-p4);
+  border-radius: var(--8p);
+  max-width: max-content;
+  overflow: hidden;
+}
