@@ -15,9 +15,6 @@
 }
 
 .header nav {
-  display: block;
-  text-align: left;
-  justify-self: end;
   margin-left: auto;
 }
 
