@@ -120,6 +120,10 @@ strong {
   .subtitulo-secundario-grande {
     font: var(--font-display-pp);
   }
+
+  .subtitulo-decorativo {
+    font: var(--font-display-G);
+  }
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
@@ -136,15 +140,13 @@ strong {
     font: var(--font-primaria-p-b);
   }
 
-  .subtitulo-decorativo {
-    font: var(--font-display-G);
-  }
 
   /* textos funcionais (botoes e links)*/
 
   .texto-funcional1-grande {
     font: var(--font-primaria-p);
   }
+
 
   .texto-funcional2 {
     font: var(--font-primaria-xp);

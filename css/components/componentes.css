@@ -2,7 +2,7 @@
   --sombra-forte: 0px 4px 4px 2px #00000040;
   --sombra-fraca: 0px 2px 4px 0px #00000033;
   --briho: 0px 1px 4px 0px #075287e1;
-  --brilho-forte: 0px 2px 4px 1px #075287e1
+  --brilho-forte: 0px 1px 4px 1px #075287e1;
   --brilho-check: 0px 0px 4px 1px #07518799;
   --sombra-interna-active: inset 0px 2px 2px 0px #00000026;
   --sombra-interna-check: inset 0px 0px 4px 2px #000000cc;
@@ -78,13 +78,13 @@
   color: var(--cor-p7);
   border: none;
   border-radius: var(--4p);
-  max-width: max-content;
+  width: max-content;
   text-decoration: none;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.1s;
 }
 
-.btn-primario:hover{
+.btn-primario:hover {
   transform: scale(1.1);
   box-shadow: var(--brilho-forte);
 }
@@ -104,17 +104,11 @@
   max-width: max-content;
 }
 
-.btn-primario.grande::after{
+.btn-primario.grande::after {
   height: var(--28p);
   width: var(--16p);
   background: url(../../img/icones/seta-grande.svg) no-repeat center;
 }
-
-
-
-
-
-
 
 /*=================================================
                 botao ligth/dark mode
@@ -149,10 +143,10 @@
   transition: 0.3s;
 }
 
-
 @media (prefers-color-scheme: light) {
   .btn-ligth-dark-mode::after {
-    background:  var(--cor-08) url(../../img/icones/light-mode.svg) no-repeat center;
+    background: var(--cor-08) url(../../img/icones/light-mode.svg) no-repeat
+      center;
   }
 }
 

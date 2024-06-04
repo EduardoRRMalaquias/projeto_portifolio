@@ -20,7 +20,6 @@
   margin-bottom: var(--20p);
 }
 
-/* decoração titulo princiapal*/
 .introducao-informacao h1 {
   max-width: 10ch;
   margin-bottom: var(--28p);
@@ -84,6 +83,11 @@
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
+  /* PROVISORIO!!!!!!*/
+  .introducao-informacao h1 {
+    display: none;
+  }
+
   .introducao-conteudo {
     padding-right: var(--20p);
     max-height: 1000px;

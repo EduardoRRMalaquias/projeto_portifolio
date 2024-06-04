@@ -7,12 +7,12 @@
 }
 
 .contato > p {
-  margin-bottom: var(--20p);
+  margin-bottom: var(--28p);
 }
 
 .contatos {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--40p);
 }
 
@@ -22,44 +22,30 @@
   align-items: start;
   gap: var(--32p) var(--16p);
 }
-
 .contato-card.principal {
   padding-left: var(--80p);
   position: relative;
+  grid-column: span 2;
 }
 
 .contato-card .contato-icone {
-  width: 48px;
-  height: 48px;
+  width: var(--48p);
+  height: var(--48p);
   background-color: var(--cor-p4);
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
 }
-
 .principal .contato-icone {
   position: absolute;
   height: 100%;
-  border-radius: var(--16p) 0  0 var(--16p);
+  border-radius: var(--16p) 0 0 var(--16p);
 }
 
 .contato-card h3 {
   align-self: center;
-}
-.contato-card.principa h3 {
-  grid-column: 1;
-}
-
-.copy-area {
-  grid-column: 1 / -1;
-  border: 2px solid var(--cor-p4);
-  border-radius: var(--8p);
-  display: flex;
-  overflow: hidden;
-}
-
-.copy-area p {
-  padding: var(--8p);
-  min-width: max-content;
+  justify-self: start;
 }
 
 .contato-card .btn-primario {
@@ -67,7 +53,49 @@
   grid-column: 1 / -1;
   place-self: end;
 }
-
 .contato-card.principal .btn-primario {
   grid-column: 2;
+}
+
+/* copy area */
+.copy-area {
+  grid-column: 1 / -1;
+  border: 2px solid var(--cor-p4);
+  border-radius: var(--8p);
+  overflow: hidden;
+}
+.copy-area p {
+  padding: var(--8p);
+  min-width: max-content;
+}
+
+@media only screen and (max-width: 58rem) {
+  .contatos {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--20p);
+  }
+
+  .contato-card.principal {
+    order: -1;
+  }
+}
+
+@media only screen and (max-width: 38rem) {
+  .contato-bg {
+    padding: var(--20p);
+  }
+
+  .contatos {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-card.principal {
+    grid-column: initial;
+    grid-template-columns: 1fr;
+  }
+
+  .contato-card.principal .btn-primario {
+    grid-row: 4;
+    grid-column: 1 / -1;
+  }
 }
