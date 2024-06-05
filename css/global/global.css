@@ -6,14 +6,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 80px;
 }
 
 body {
   background-color: var(--cor-10);
   font-family: "roboto", Arial, Helvetica, sans-serif;
   padding-top: 90px;
-  padding-bottom: 1000px;
 }
 
 /* barra de rolagem */

@@ -6,11 +6,13 @@
   --brilho-check: 0px 0px 4px 1px #07518799;
   --sombra-interna-active: inset 0px 2px 2px 0px #00000026;
   --sombra-interna-check: inset 0px 0px 4px 2px #000000cc;
+  --copy-icone: url(../../img/icones/copy.svg);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --sombra-interna-check: inset 0px 0px 2px 1px #00000059;
+    -copy-icone: url(../../img/icones/copy-ligth.svg);
   }
 }
 
@@ -160,4 +162,73 @@
   width: 0;
   height: 0;
   visibility: hidden;
+}
+
+/*=================================================
+                      copy aera
+=================================================*/
+
+/* copy area */
+.copy-area {
+  border: 2px solid var(--cor-p4);
+  border-radius: var(--8p);
+  max-width: 480px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.copy-conteudo {
+  padding: var(--8p);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.copy-conteudo::before{
+  content: "Clique e copie";
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background:  #4ca8cfbe;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.3s;
+  /* tipografia*/
+  font: var(--font-primaria-pp);
+}
+.copy-conteudo:hover:before{
+  opacity: 1;
+}
+
+.copy-conteudo:after {
+  content: " ";
+  display: block;
+  width: var(--120p);
+  height: 100%;
+  background: linear-gradient(90deg, #00000000, var(--cor-08) 85%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.copy-area p {
+  min-width: max-content;
+}
+
+.copy {
+  width: 60px;
+  padding: var(--20p);
+  border-left: 2px solid var(--cor-p4);
+  background: var(--copy-icone) no-repeat center;
 }

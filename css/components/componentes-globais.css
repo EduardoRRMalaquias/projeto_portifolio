@@ -9,7 +9,7 @@
   --dec-pequeno: url(../../img/decoracao/dec-menu.svg);
   --decoracao: url(../../img/decoracao/dec.svg);
   --fundo-introducao: url(../../img/introducao-fundo.png);
-  --fundo-experiencia: url(../../img/bg-experiencias.jpg)
+  --fundo-experiencia: url(../../img/bg-experiencias.jpg);
 }
 
 @media (prefers-color-scheme: light) {

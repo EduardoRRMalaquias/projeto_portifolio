@@ -1,5 +1,5 @@
 .contato-bg {
-  padding: var(--32p) var(--60p);
+  padding: var(--32p) var(--60p) 0 var(--60p);
 }
 
 .contato h2 {
@@ -57,17 +57,10 @@
   grid-column: 2;
 }
 
-/* copy area */
-.copy-area {
+.contato-card .copy-area {
   grid-column: 1 / -1;
-  border: 2px solid var(--cor-p4);
-  border-radius: var(--8p);
-  overflow: hidden;
 }
-.copy-area p {
-  padding: var(--8p);
-  min-width: max-content;
-}
+
 
 @media only screen and (max-width: 58rem) {
   .contatos {
