@@ -18,13 +18,13 @@
   margin-left: auto;
 }
 
-.header menu {
+menu {
   display: flex;
   align-items: center;
   gap: var(--36p);
 }
 
-.header a {
+menu a {
   text-decoration: none;
 }
 .header a:hover {

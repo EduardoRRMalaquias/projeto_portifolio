@@ -12,6 +12,7 @@
 @import "components/componentes-globais.css";
 @import "components/componentes.css";
 @import "global/header.css";
+@import "global/footer.css";
 
 /* conteudo*/
 @import "content/introducao.css";
