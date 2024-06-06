@@ -75,7 +75,7 @@
 
 @media only screen and (max-width: 38rem) {
   .contato-bg {
-    padding: var(--20p);
+    padding: var(--20p) var(--20p) 0 var(--20p);
   }
 
   .contatos {

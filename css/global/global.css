@@ -15,6 +15,12 @@ body {
   padding-top: 90px;
 }
 
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--cor-09);
+  }
+}
+
 /* barra de rolagem */
 
 body::-webkit-scrollbar {

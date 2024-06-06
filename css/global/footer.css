@@ -6,6 +6,7 @@ footer {
   width: 100%;
   height: 480px;
   overflow: hidden;
+  text-align: center;
 }
 
 .footer-bg {
@@ -23,7 +24,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   gap: var(--32p);
-  padding: 0 var(--32p)  var(--80p) var(--32p);
+  padding: 0 var(--32p) var(--80p) var(--32p);
 }
 
 .footer-bg svg {
@@ -36,4 +37,45 @@ footer {
   transform: scaleY(3) scaleX(2.25);
   transform-origin: bottom;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 58rem) {
+  .footer-bg {
+    top: -10px;
+  }
+
+  .footer-conteudo {
+    padding: 0 var(--32p) var(--40p) var(--32p);
+  }
+}
+
+@media only screen and (max-width: 38rem) {
+  .footer-bg {
+    top: 72px;
+    background: linear-gradient(var(--cor-09) 50%, var(--cor-p4) 50%);
+  }
+  @media (prefers-color-scheme: light) {
+    .footer-bg {
+      background: linear-gradient(var(--cor-08) 50%, var(--cor-p4) 50%);
+    }
+  }
+
+  .footer-conteudo {
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--16p);
+  }
+
+  .footer-conteudo menu {
+    gap: var(--16p);
+  }
+
+  .footer-conteudo menu {
+    flex-direction: column;
+  }
+
+  .footer-bg svg {
+    width: 100%;
+    height: 100%;
+  }
 }

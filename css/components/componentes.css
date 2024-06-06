@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --sombra-interna-check: inset 0px 0px 2px 1px #00000059;
-    -copy-icone: url(../../img/icones/copy-ligth.svg);
+    --copy-icone: url(../../img/icones/copy-ligth.svg);
   }
 }
 
@@ -179,7 +179,6 @@
   cursor: pointer;
 }
 
-
 .copy-conteudo {
   padding: var(--8p);
   overflow: hidden;
@@ -220,6 +219,12 @@
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .copy-conteudo:after {
+    background: linear-gradient(90deg, #00000000, var(--cor-09) 85%);
+  }
 }
 
 .copy-area p {
