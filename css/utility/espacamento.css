@@ -1,6 +1,7 @@
 :root {
   --4p: 0.25rem; /*4px*/
   --8p: 0.5rem; /*8px*/
+  --10p: 0.625rem; /*10px*/
   --12p: 0.75rem; /*12px*/
   --16p: 1rem; /*16px*/
   --20p: 1.25rem; /*20px*/
@@ -35,6 +36,11 @@
   padding-left: var(--32p);
   padding-right: var(--32p);
   padding-bottom: var(--32p);
+}
+
+.p-container {
+  padding-left: var(--28p);
+  padding-right: var(--28p);
 }
 
 @media only screen and (max-width: 38rem) {

@@ -6,13 +6,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: var(--80p);
 }
 
 body {
   background-color: var(--cor-10);
   font-family: "roboto", Arial, Helvetica, sans-serif;
-  padding-top: 90px;
+  padding-top: calc(var(--80p) + 10);
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,8 +34,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--cor-p4);
-  border-radius: 20px;
-  border: 3px solid var(--cor-10);
+  border-radius: var(--20p);
+  border: var(--4p) solid var(--cor-10);
 }
 
 ul,

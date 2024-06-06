@@ -1,5 +1,6 @@
-.bg-portifolio {
-  padding: var(--120p) var(--80p);
+.portifolio{
+  padding-top: var(--120p);
+  padding-bottom: var(--120p);
 }
 
 .portifolio h2 {
@@ -63,8 +64,9 @@
 }
 
 @media only screen and (max-width: 38rem) {
-  .bg-portifolio {
-    padding: var(--80p) var(--20p);
+  .portifolio{
+    padding-top: var(--60p);
+    padding-bottom: var(--60p);
   }
 
   .projeto .flex {

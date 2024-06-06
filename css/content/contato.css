@@ -1,5 +1,6 @@
 .contato-bg {
-  padding: var(--32p) var(--60p) 0 var(--60p);
+    padding-top: var(--32p);
+    padding-bottom: 0;
 }
 
 .contato h2 {
@@ -85,6 +86,8 @@
   .contato-card.principal {
     grid-column: initial;
     grid-template-columns: 1fr;
+    padding-left: var(--60p);
+
   }
 
   .contato-card.principal .btn-primario {

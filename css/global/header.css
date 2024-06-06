@@ -1,7 +1,6 @@
 .header-bg {
   width: 100%;
   background-color: var(--cor-10);
-  padding: var(--28p) var(--48p);
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -12,6 +11,8 @@
   display: flex;
   gap: var(--60p);
   align-items: center;
+  padding-bottom: var(--28p);
+  padding-top: var(--28p);
 }
 
 .header nav {
@@ -56,9 +57,9 @@ menu a {
 
 .header span {
   display: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 8px;
+  width: var(--20p);
+  height: var(--20p);
+  border-radius: var(--8p);
   background-color: var(--cor-00);
 }
 
@@ -80,7 +81,6 @@ menu a {
 @media only screen and (max-width: 38rem) {
   .header-bg {
     border-top: var(--4p) solid var(--cor-p4);
-    padding: var(--28p);
   }
   .header .btn-ligth-dark-mode {
     display: none;

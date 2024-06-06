@@ -24,7 +24,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   gap: var(--32p);
-  padding: 0 var(--32p) var(--80p) var(--32p);
+  padding: 0 var(--28p) var(--80p) var(--28p);
 }
 
 .footer-bg svg {
@@ -41,7 +41,7 @@ footer {
 
 @media only screen and (max-width: 58rem) {
   .footer-bg {
-    top: -10px;
+    top: -var(--10p);
   }
 
   .footer-conteudo {

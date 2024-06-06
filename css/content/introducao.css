@@ -1,6 +1,7 @@
 .introducao {
   background: var(--fundo-introducao) no-repeat center bottom/cover;
-  padding: var(--20p) var(--20p) var(--200p) var(--20p);
+  padding-bottom: var(--200p);
+  padding-top: var(--28p);
 }
 
 .introducao-conteudo {
@@ -26,7 +27,7 @@
 }
 
 .introducao-informacao .lista-links {
-  margin-bottom: var(--80p);
+  margin-bottom: var(--40p);
 }
 
 .diferencial {
@@ -46,10 +47,16 @@
   max-width: 26ch;
 }
 
+.diferencial img {
+  margin-bottom: var(--16p);
+}
+
 .introducao-conteudo .imagem-perfil {
-  margin-top: calc(var(--60p) * -1);
+  margin-top: calc(var(--60p) * -1.14);
   margin-bottom: calc(var(--60p) * -1);
   width: 100%;
+  grid-row: 1 / span 2;
+  grid-column: 2;
 }
 .introducao-conteudo .imagem-perfil img {
   object-fit: cover;
@@ -70,10 +77,13 @@
   .introducao-conteudo .imagem-perfil {
     margin-top: 0;
     margin-bottom: calc(var(--120p) * -1);
+    grid-row: initial;
+    grid-column: initial;
   }
   .introducao-conteudo .imagem-perfil img {
     border-radius: var(--32p);
   }
+
   .introducao-informacao h2 br {
     display: none;
   }

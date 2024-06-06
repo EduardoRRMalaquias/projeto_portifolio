@@ -1,5 +1,6 @@
 .sobre {
-  padding: 0 var(--32p) 0 var(--32p);
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .sobre h2 {
@@ -22,6 +23,12 @@
   margin-bottom: var(--20p);
   width: 100%;
 }
+.informaçoes-sobre .informaçoes-sobre-item:nth-child(1) h4 {
+  background: var(--icone-perfil) no-repeat right;
+}
+.informaçoes-sobre .informaçoes-sobre-item:nth-child(2) h4 {
+  background: var(--icone-objetivo) no-repeat right;
+}
 
 .habilidades {
   grid-column: 2;
@@ -32,7 +39,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--32p);
-  margin-bottom: 16px;
+  margin-bottom: var(--16p);
 }
 
 .habilidades-item {

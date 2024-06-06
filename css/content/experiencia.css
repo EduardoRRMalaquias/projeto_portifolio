@@ -1,6 +1,6 @@
 .experiencia {
   padding: 0 var(--20p) var(--20p) var(--20p);
-  background: var(--fundo-experiencia) no-repeat center/cover;
+  background: var(--fundo-experiencia) no-repeat center/cover fixed;
 }
 
 .profissional,
@@ -42,12 +42,14 @@
 .profissional .destaque {
   position: absolute;
   top: calc(var(--28p) * -1);
+  padding-left: var(--8p);
 }
 
 .experiencia-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .experiencia-item h4 {
@@ -63,6 +65,14 @@
   margin-bottom: var(--20p);
 }
 
+.educacional .experiencia-item h4 + span {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 8ch;
+  align-self: center;
+  justify-self: end;
+}
+
 .experiencia-item span ul {
   list-style: none;
 }
@@ -70,6 +80,11 @@
 .experiencia-item p,
 .experiencia-item ul {
   margin-bottom: var(--40p);
+}
+
+.educacional .experiencia-item p,
+.educacional .experiencia-item ul {
+  grid-column: span 2;
 }
 
 .experiencia-item span ul {
@@ -83,7 +98,11 @@
 }
 
 .experiencia-item .btn-primario {
-  margin-left: auto;
+  place-self: end;
+}
+
+.educacional .experiencia-item .btn-primario {
+  grid-column: span 2;
 }
 
 @media only screen and (max-width: 58rem) {
