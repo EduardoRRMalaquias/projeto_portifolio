@@ -11,7 +11,7 @@ footer {
 
 .footer-bg {
   position: absolute;
-  top: -120px;
+  top: calc(var(--120p) * -1);
   left: 0;
   right: 0;
   bottom: 0;
@@ -51,7 +51,7 @@ footer {
 
 @media only screen and (max-width: 38rem) {
   .footer-bg {
-    top: 72px;
+    top: calc(var(--80p) - var(--8p));
     background: linear-gradient(var(--cor-09) 50%, var(--cor-p4) 50%);
   }
   @media (prefers-color-scheme: light) {

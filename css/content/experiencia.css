@@ -12,7 +12,7 @@
 /* barra de rolagem */
 .profissional::-webkit-scrollbar,
 .educacional::-webkit-scrollbar {
-  height: 12px;
+  height: var(--12p);
 }
 .profissiona::-webkit-scrollbar-track,
 .educacional::-webkit-scrollbar-track {
@@ -21,7 +21,7 @@
 .profissional::-webkit-scrollbar-thumb,
 .educacional::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 30%);
-  border-radius: 20px;
+  border-radius: var(--20p);
   border: 3px solid transparent;
 }
 

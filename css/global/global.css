@@ -12,7 +12,7 @@ html {
 body {
   background-color: var(--cor-10);
   font-family: "roboto", Arial, Helvetica, sans-serif;
-  padding-top: calc(var(--80p) + 10);
+  padding-top: calc(var(--80p) + var(--10p));
 }
 
 @media (prefers-color-scheme: light) {

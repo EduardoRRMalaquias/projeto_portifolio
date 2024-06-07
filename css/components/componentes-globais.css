@@ -1,11 +1,11 @@
 :root {
-  --sombra-forte: 0px 4px 4px 2px #00000040;
-  --sombra-fraca: 0px 2px 4px 0px #00000033;
+  --sombra-forte: 0px 4px 4px var(--2p) #00000040;
+  --sombra-fraca: 0px var(--2p) 4px 0px #00000033;
   --briho: 0px 1px 4px 0px #075287e1;
   --brilho-forte: 0px 1px 4px 1px #075287e1;
   --brilho-check: 0px 0px 4px 1px #07518799;
-  --sombra-interna-active: inset 0px 2px 2px 0px #00000026;
-  --sombra-interna-check: inset 0px 0px 4px 2px #000000cc;
+  --sombra-interna-active: inset 0px var(--2p) var(--2p) 0px #00000026;
+  --sombra-interna-check: inset 0px 0px 4px var(--2p) #000000cc;
   --dec-pequeno: url(../../img/decoracao/dec-menu.svg);
   --decoracao: url(../../img/decoracao/dec.svg);
   --fundo-introducao: url(../../img/introducao-fundo.png);
@@ -16,7 +16,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --sombra-interna-check: inset 0px 0px 2px 1px #00000059;
+    --sombra-interna-check: inset 0px 0px var(--2p) 1px #00000059;
     --dec-pequeno: url(../../img/decoracao/dec-menu-ligth.svg);
     --decoracao: url(../../img/decoracao/dec-ligth.svg);
     --fundo-introducao: url(../../img/introducao-fundo-ligth.png);
@@ -86,7 +86,7 @@
 .flex {
   display: flex;
   gap: var(--28p);
-  align-items: center;s
+  align-items: center;
   max-width: max-content;
 }
 
@@ -111,12 +111,12 @@
   height: var(--12p);
   background: linear-gradient(var(--gradiente-primario2));
   position: absolute;
-  top: calc(var(--28p) - 2px);
+  top: calc(var(--28p) - var(--2p));
   left: calc(var(--12p) * -1);
 }
 
 @media only screen and (max-width: 68rem) {
   .decoracao::before {
-    top: calc(var(--12p) + 2);
+    top: calc(var(--12p) + var(--2p));
   }
 }
