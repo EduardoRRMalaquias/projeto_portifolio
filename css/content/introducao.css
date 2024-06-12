@@ -93,14 +93,14 @@
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
-  /* PROVISORIO!!!!!!*/
-  .introducao-informacao h1 {
-    display: none;
-  }
 
   .introducao-conteudo {
     padding-right: var(--20p);
     max-height: 1000px;
+  }
+
+  .introducao-informacao {
+    background: none;
   }
 
   .introducao-informacao h1::before {
@@ -109,17 +109,25 @@
     position: initial;
   }
 
-  .introducao-informacao h2 {
-    margin-bottom: var(--12p);
+  .introducao-informacao .lista-links {
+    gap: 0;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+  .introducao-informacao .lista-links svg {
+    height: var(--12p);
+    width: var(--12p);
   }
 
-  .introducao-informacao .lista-links {
-    margin-bottom: var(--20p);
+  .introducao-informacao .lista-links .btn-link{
+    gap: var(--4p);
+    padding:  var(--4p);
   }
 
   .diferencial {
     flex-direction: column;
     gap: var(--12p);
+    order: 2;
   }
 
   .diferencial-item {
@@ -137,15 +145,14 @@
   }
 
   .introducao-conteudo .imagem-perfil {
-    margin-bottom: calc(var(--80p) * -1);
+    margin: initial;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .introducao-conteudo .imagem-perfil img {
+    border-radius: var(--8p);
   }
 }
 
-@media only screen and (max-width: 26rem /* 600px */) {
-  .introducao-informacao {
-    background: none;
-  }
-  .introducao-informacao h2 {
-    max-width: max-content;
-  }
-}
