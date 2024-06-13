@@ -76,8 +76,4 @@
   .projeto:nth-child(odd) .projeto-informacao {
     text-align: initial;
   }
-  .projeto:nth-child(odd) .flex,
-  .projeto:nth-child(odd) .lista-links {
-    margin-left: initial;
-  }
 }
