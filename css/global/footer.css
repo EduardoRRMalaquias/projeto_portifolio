@@ -41,7 +41,7 @@ footer {
 
 @media only screen and (max-width: 58rem) {
   .footer-bg {
-    top: -var(--10p);
+    top: var(--10p);
   }
 
   .footer-conteudo {

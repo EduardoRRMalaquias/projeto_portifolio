@@ -95,12 +95,11 @@
   content: "";
   display: block;
   height: var(--10p);
-  width: calc(var(--4p) + 2);
+  width: var(--4p) ;
   background: url(../../img/icones/seta.svg) no-repeat center;
 }
 
 .btn-primario.grande {
-  height: var(--4p1);
   padding: var(--8p) var(--16p);
   border-radius: var(--8p);
   max-width: max-content;
