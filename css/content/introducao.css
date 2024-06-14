@@ -127,7 +127,7 @@
     flex-direction: column;
     gap: 0;
     order: 2;
-    padding-top:var(--120p);
+    padding-top: var(--120p);
   }
 
   .diferencial-item {
@@ -173,13 +173,11 @@
     max-width: 50ch;
     display: none;
   }
-  .diferencial-item.ativo p{
+  .diferencial-item.ativo p {
     display: block;
   }
 
-  
   .introducao-conteudo .imagem-perfil img {
     border-radius: var(--8p);
-    
   }
 }
