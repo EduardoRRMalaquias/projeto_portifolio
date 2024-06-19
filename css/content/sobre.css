@@ -1,6 +1,7 @@
 .sobre {
   padding-bottom: 0;
   padding-top: 0;
+  background: var(--decoracao) no-repeat top var(--48p) right, var(--decoracao) no-repeat bottom right;
 }
 
 .sobre h2 {
@@ -72,6 +73,12 @@
 }
 
 @media only screen and (max-width: 58rem) {
+  .sobre {
+    padding-bottom: 0;
+    padding-top: 0;
+    background: var(--decoracao) no-repeat bottom right var(--28p);
+  }
+
   .informaçoes-sobre {
     grid-template-columns: 1fr;
   }

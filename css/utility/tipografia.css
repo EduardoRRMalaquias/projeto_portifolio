@@ -19,6 +19,7 @@
   --font-primaria-GG: 600 2rem/1.25 "Poppins", sans-serif;
   --font-display-G: 700 1.75rem/1.5 "Lemon Bold", sans-serif;
   --font-primaria-G: 700 1.75rem/1.5 "Poppins", sans-serif;
+  --font-display-m-b: 700 1.5rem/1.5 "Lemon Bold", sans-serif;
   --font-display-m: 300 1.5rem/1.5 "Lemon light", sans-serif;
   --font-primaria-m: 700 1.5rem/1.3 "Poppins", sans-serif;
   --font-texto-m: 400 1.5rem/1.15 "Roboto", sans-serif;
@@ -130,6 +131,10 @@ strong {
   /* titulos e subtitulos */
   .titulo-principal {
     font: var(--font-display-GG);
+  }
+
+  .introducao .titulo-principal{
+    font: var(--font-display-m-b);
   }
 
   .subtitulo-principal-grande {

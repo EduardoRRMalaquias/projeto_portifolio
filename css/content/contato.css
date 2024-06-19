@@ -3,6 +3,10 @@
   padding-bottom: 0;
 }
 
+.contato{
+  background: var(--decoracao) no-repeat top right;
+}
+
 .contato h2 {
   margin-bottom: var(--32p);
 }
@@ -27,6 +31,9 @@
   padding-left: var(--80p);
   position: relative;
   grid-column: span 2;
+  background-image: var(--decoracao);
+  background-repeat: no-repeat;
+  background-position: top var(--32p) right var(--32p);
 }
 
 .contato-card .contato-icone {
@@ -63,6 +70,10 @@
 }
 
 @media only screen and (max-width: 58rem) {
+  .contato{
+    background: none;
+  }
+
   .contatos {
     grid-template-columns: 1fr 1fr;
     gap: var(--20p);
@@ -70,6 +81,7 @@
 
   .contato-card.principal {
     order: -1;
+    background-image: none;
   }
 }
 
