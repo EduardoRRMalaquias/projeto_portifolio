@@ -140,13 +140,11 @@ strong {
     font: var(--font-primaria-p-b);
   }
 
-
   /* textos funcionais (botoes e links)*/
 
   .texto-funcional1-grande {
     font: var(--font-primaria-p);
   }
-
 
   .texto-funcional2 {
     font: var(--font-primaria-xp);

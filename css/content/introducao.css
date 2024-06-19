@@ -7,7 +7,7 @@
 .introducao-conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--40p);
+  gap: var(--28p) var(--40p);
   position: relative;
   padding-right: var(--40p);
   max-height: 600px;

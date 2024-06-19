@@ -1,6 +1,6 @@
 .contato-bg {
-    padding-top: var(--32p);
-    padding-bottom: 0;
+  padding-top: var(--32p);
+  padding-bottom: 0;
 }
 
 .contato h2 {
@@ -62,7 +62,6 @@
   grid-column: 1 / -1;
 }
 
-
 @media only screen and (max-width: 58rem) {
   .contatos {
     grid-template-columns: 1fr 1fr;
@@ -87,7 +86,6 @@
     grid-column: initial;
     grid-template-columns: 1fr;
     padding-left: var(--60p);
-
   }
 
   .contato-card.principal .btn-primario {
