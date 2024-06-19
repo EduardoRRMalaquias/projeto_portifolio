@@ -3,8 +3,16 @@
   background-color: var(--cor-10);
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-90px);
   z-index: 1000;
   box-shadow: var(--sombra-fraca);
+  transition: 0.5s;
+}
+.header-bg.visivel {
+  top: 0;
+  transform: translateY(0);
 }
 
 .header {

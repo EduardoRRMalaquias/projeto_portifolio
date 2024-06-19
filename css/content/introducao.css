@@ -1,7 +1,7 @@
 .introducao {
   background: var(--fundo-introducao) no-repeat center bottom/cover;
   padding-bottom: var(--200p);
-  padding-top: var(--28p);
+  padding-top: calc(var(--28p) + 90px) ;
 }
 
 .introducao-conteudo {
