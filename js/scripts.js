@@ -3,9 +3,9 @@ const header = document.querySelector("header");
 let orientacaoRolagem = 0;
 
 window.addEventListener("scroll", visibilidadeMenu, { passive: true });
-// funcao que alterna a visibilidade do menu de acordo com scroll
+
+// alternar a visibilidade do menu de acordo com scroll
 function visibilidadeMenu() {
-  console.log("scroll");
   var { scrollY } = window;
   if (scrollY > orientacaoRolagem) {
     // Rolagem para baixo
@@ -17,6 +17,29 @@ function visibilidadeMenu() {
   orientacaoRolagem = scrollY <= 0 ? 0 : scrollY;
 }
 
+// Menu ativo
+let links = document.querySelectorAll(".menu-link");
+let secoes = document.querySelectorAll(".secao");
 
+window.addEventListener("scroll", linksMenuAtivo);
 
-//visibilidade do menu
+function linksMenuAtivo() {
+  secoes.forEach(capturarSecoes);
+
+  function capturarSecoes(secao) {
+    let topo = window.scrollY;
+    let topoSecao = secao.offsetTop - 90;
+    let alturaSecao = secao.offsetHeight;
+    let idSecao = secao.getAttribute("id");
+
+    if (topo >= topoSecao && topo < topoSecao + alturaSecao) {
+      links.forEach(ativarDesativarMenu);
+    }
+    function ativarDesativarMenu(link) {
+      link.classList.remove("ativo");
+      document
+        .querySelector(`.menu-link[href*='${idSecao}']`)
+        .classList.add("ativo");
+    }
+  }
+}

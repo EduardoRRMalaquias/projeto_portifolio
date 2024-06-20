@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 58rem) {
   .introducao {
-    padding-top: var(--12p);
+    padding-top: calc(var(--12p) + 90px) ;
     padding-bottom: calc(var(--200p) + 60px);
   }
   .introducao-conteudo {
