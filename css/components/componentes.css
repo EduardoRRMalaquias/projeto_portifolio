@@ -7,12 +7,14 @@
   --sombra-interna-active: inset 0 var(--2p) var(--2p) 0 #00000026;
   --sombra-interna-check: inset 0 0 var(--4p) var(--2p) #000000cc;
   --copy-icone: url(../../img/icones/copy.svg);
+  --check-icone: url(../../img/icones/check.svg);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --sombra-interna-check: inset 0 0 var(--2p) 1px #00000059;
     --copy-icone: url(../../img/icones/copy-ligth.svg);
+    --check-icone: url(../../img/icones/check-ligth.svg);
   }
 }
 
@@ -95,7 +97,7 @@
   content: "";
   display: block;
   height: var(--10p);
-  width: var(--4p) ;
+  width: var(--4p);
   background: url(../../img/icones/seta.svg) no-repeat center;
 }
 
@@ -204,6 +206,10 @@
   /* tipografia*/
   font: var(--font-primaria-pp);
 }
+.copiado .copy-conteudo::before {
+  content: "Item Copiado";
+  opacity: 1;
+}
 .copy-conteudo:hover:before {
   opacity: 1;
 }
@@ -248,4 +254,8 @@
   padding: var(--20p);
   border-left: var(--2p) solid var(--cor-p4);
   background: var(--copy-icone) no-repeat center;
+  transition: 0.3;
+}
+.copiado .copy {
+  background: var(--check-icone) no-repeat center;
 }

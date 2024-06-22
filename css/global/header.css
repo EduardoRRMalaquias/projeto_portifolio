@@ -3,8 +3,16 @@
   background-color: var(--cor-10);
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-90px);
   z-index: 1000;
   box-shadow: var(--sombra-fraca);
+  transition: 0.5s;
+}
+.header-bg.visivel {
+  top: 0;
+  transform: translateY(0);
 }
 
 .header {
@@ -25,15 +33,15 @@ menu {
   gap: var(--36p);
 }
 
-menu a {
+menu .menu-link {
   text-decoration: none;
 }
-.header a:hover {
+.header .menu-link:hover {
   color: var(--cor-p4);
 }
 
 /* animaçã do menu ativo*/
-.header a.ativo::after {
+.header .menu-link.ativo::after {
   content: "";
   display: block;
   width: 100%;
@@ -41,7 +49,7 @@ menu a {
   background-color: currentColor;
   border-radius: var(--2p);
 }
-.header a.ativo:hover {
+.header .menu-link.ativo:hover {
   color: inherit;
 }
 

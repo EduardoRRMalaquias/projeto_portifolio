@@ -54,6 +54,7 @@ footer {
     top: calc(var(--80p) - var(--8p));
     background: linear-gradient(var(--cor-09) 50%, var(--cor-p4) 50%);
   }
+
   @media (prefers-color-scheme: light) {
     .footer-bg {
       background: linear-gradient(var(--cor-08) 50%, var(--cor-p4) 50%);

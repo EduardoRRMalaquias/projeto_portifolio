@@ -1,9 +1,9 @@
 .contato-bg {
-    padding-top: var(--32p);
-    padding-bottom: 0;
+  padding-top: var(--32p);
+  padding-bottom: 0;
 }
 
-.contato{
+.contato {
   background: var(--decoracao) no-repeat top right;
 }
 
@@ -69,9 +69,8 @@
   grid-column: 1 / -1;
 }
 
-
 @media only screen and (max-width: 58rem) {
-  .contato{
+  .contato {
     background: none;
   }
 
@@ -99,7 +98,6 @@
     grid-column: initial;
     grid-template-columns: 1fr;
     padding-left: var(--60p);
-
   }
 
   .contato-card.principal .btn-primario {

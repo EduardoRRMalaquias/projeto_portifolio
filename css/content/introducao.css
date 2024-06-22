@@ -1,7 +1,7 @@
 .introducao {
   background: var(--fundo-introducao) no-repeat center bottom/cover;
   padding-bottom: var(--200p);
-  padding-top: var(--28p);
+  padding-top: calc(var(--28p) + 90px) ;
 }
 
 .introducao-conteudo {
@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 58rem) {
   .introducao {
-    padding-top: var(--12p);
+    padding-top: calc(var(--12p) + 90px) ;
     padding-bottom: calc(var(--200p) + 60px);
   }
   .introducao-conteudo {
