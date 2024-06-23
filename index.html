@@ -24,8 +24,8 @@
           <img src="./img/logo-grande.svg" srcset="./img/logo-grande.svg 177w" alt="Eduardo Rodrigues Rangel Malaquias - Programador Front-End" title="Eduardo Rodrigues Rangel Malaquias - Programador Front-End" width="177" height="34">
         </picture>
       </a>
-      <nav>
-        <menu class="subtitulo-principal-pequeno cor-01">
+      <nav aria-label="primaria">
+        <menu class="subtitulo-principal-pequeno cor-01" id="menu">
           <li><a class="menu-link ativo" href="./index.html#introducao">Inicio</a></li>
           <li><a class="menu-link" href="./index.html#sobre">Sobre mim</a></li>
           <li><a class="menu-link" href="./index.html#projetos">Projetos</a></li>
@@ -35,7 +35,7 @@
       <label class="btn-ligth-dark-mode" for="ligth-dark-mode">
         <input class="ligth-dark-mode" type="checkbox" id="ligth-dark-mode" />
       </label>
-      <span class="!!!MANUHABURGUER!!!"></span>
+      <button class="menu-hamburguer cor-00" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span></span></button>
     </div>
   </header>
 

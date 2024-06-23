@@ -10,6 +10,13 @@ function visibilidadeMenu() {
   if (scrollY > orientacaoRolagem) {
     // Rolagem para baixo
     header.classList.remove("visivel");
+    nav.classList.remove("ativo");
+
+    const ativo = nav.classList.contains("ativo");
+    menuHaburguer.setAttribute("aria-expanded", ativo);
+    if (!ativo) {
+      menuHaburguer.setAttribute("aria-label", "Abrir Menu");
+    }
   } else if (scrollY < orientacaoRolagem) {
     // Rolagem para cima
     header.classList.add("visivel");
@@ -43,6 +50,26 @@ function linksMenuAtivo() {
     }
   }
 }
+
+// Menu Hamburguer
+
+const menuHaburguer = document.querySelector(".menu-hamburguer");
+const nav = document.querySelector("nav");
+
+function abrirFecharMenu(event) {
+  if (event.type === "touchstart") event.preventDefault();
+  nav.classList.toggle("ativo");
+  const ativo = nav.classList.contains("ativo");
+  event.currentTarget.setAttribute("aria-expanded", ativo);
+  if (ativo) {
+    event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+  } else {
+    event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+  }
+}
+
+menuHaburguer.addEventListener("click", abrirFecharMenu);
+menuHaburguer.addEventListener("touchstart", abrirFecharMenu);
 
 // copy area
 if (window.ClipboardJS) {

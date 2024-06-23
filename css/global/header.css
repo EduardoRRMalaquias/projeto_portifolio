@@ -63,24 +63,103 @@ menu .menu-link {
   left: calc(var(--20p) * -1);
 }
 
-.header span {
+.menu-hamburguer {
   display: none;
-  width: var(--20p);
-  height: var(--20p);
-  border-radius: var(--8p);
-  background-color: var(--cor-00);
+  padding: var(--20p) var(--12p);
+  border: none;
+  border-radius: var(--4p);
+  background-color: var(--cor-10);
+  cursor: pointer;
+}
+
+.menu-hamburguer:hover {
+  background-color: var(--cor-08);
+}
+
+.menu-hamburguer span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: var(--cor-01);
+  position: relative;
+  border-radius: 2px;
+}
+.menu-hamburguer span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: inherit;
+  position: absolute;
+  top: -8px;
+  border-radius: 2px;
+}
+.menu-hamburguer span::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: inherit;
+  position: absolute;
+  bottom: -8px;
+  border-radius: 2px;
 }
 
 @media only screen and (max-width: 58rem) {
   .header {
     gap: var(--32p);
   }
+
   .header nav {
     display: none;
   }
-  .header span {
+  .header nav.ativo {
+    display: block;
+    width: 100%;
+    padding: var(--20p);
+    background-color: var(--cor-10);
+    position: fixed;
+    top: 90px;
+    left: 0;
+    border-top: var(--2p) solid var(--cor-p4);
+  }
+
+  .header nav.ativo menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--20p);
+  }
+
+  .header nav.ativo .menu-link {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+    padding: var(--8p);
+    background-color: var(--cor-08);
+    border-radius: var(--4p);
+  }
+
+  .header nav.ativo .menu-link:hover {
+    color: inherit;
+    background-color: var(--cor-06);
+  }
+  .header nav.ativo .menu-link.ativo:hover {
+    background-color: var(--cor-08);
+  }
+
+  .header nav.ativo menu li .menu-link.ativo::after  {
+    display: none;
+  }
+  .header nav menu li:has(.ativo) {
+    display: block;
+    border-bottom: var(--2p) solid var(--cor-01);
+  }
+
+  .menu-hamburguer {
     display: block;
   }
+
   .header .btn-ligth-dark-mode {
     margin-left: auto;
   }
@@ -93,8 +172,7 @@ menu .menu-link {
   .header .btn-ligth-dark-mode {
     display: none;
   }
-  .header span {
-    display: block;
+  .menu-hamburguer {
     margin-left: auto;
   }
 }
