@@ -108,6 +108,8 @@ menu .menu-link {
 @media only screen and (max-width: 58rem) {
   .header {
     gap: var(--32p);
+    padding-bottom: var(--20p);
+    padding-top: var(--28p);
   }
 
   .header nav {
@@ -148,7 +150,7 @@ menu .menu-link {
     background-color: var(--cor-08);
   }
 
-  .header nav.ativo menu li .menu-link.ativo::after  {
+  .header nav.ativo menu li .menu-link.ativo::after {
     display: none;
   }
   .header nav menu li:has(.ativo) {
