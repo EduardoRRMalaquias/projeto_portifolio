@@ -259,3 +259,40 @@
 .copiado .copy {
   background: var(--check-icone) no-repeat center;
 }
+
+/*=================================================
+                      Tooltips
+=================================================*/
+
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tooltip-texto {
+  position: absolute;
+  top: 0;
+  background-color: var(--cor-01);
+  padding: var(--4p) var(--8p);
+  border-radius: var(--4p);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.tooltip-texto::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: var(--8p) solid;
+  border-color: var(--cor-01) #0000 #0000 #0000;
+}
+
+.tooltip:hover .tooltip-texto {
+  top: -120%;
+  visibility: visible;
+  opacity: 1;
+}
