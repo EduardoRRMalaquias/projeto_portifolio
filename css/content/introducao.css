@@ -9,7 +9,6 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--28p) var(--40p);
   position: relative;
-  padding-right: var(--40p);
   max-height: 600px;
   position: relative;
 }
@@ -95,40 +94,19 @@
     display: none;
   }
   .diferencial {
-    margin-bottom: var(--16p);
+    margin-bottom: var(--28p);
   }
 }
 
 @media only screen and (max-width: 38rem /* 600px */) {
-  .introducao.p-container {
-    padding-left: var(--16p);
-    padding-right: var(--16p);
-  }
-
   .introducao-conteudo {
-    padding-right: var(--20p);
-    max-height: 1000px;
-  }
-
-  .introducao-informacao {
-    background: none;
-  }
-
-  .introducao-informacao h1::before {
-    width: var(--16p);
-    height: var(--8p);
-    position: initial;
-  }
-
-  .introducao-informacao .lista-links {
-    margin-bottom: 0;
+    gap: 0;
   }
 
   .diferencial {
+    width: 100%;
     flex-direction: column;
     gap: 0;
-    order: 2;
-    padding-top: var(--120p);
   }
 
   .diferencial-item {
@@ -158,6 +136,12 @@
     width: var(--12p);
     height: var(--8p);
     background: url(../../img/icones/seta-indicador.svg) no-repeat;
+    transition: 0.3s;
+  }
+
+  .diferencial-item button:hover::after,
+  .diferencial-item button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
   }
 
   .diferencial img,
@@ -174,8 +158,40 @@
     max-width: 50ch;
     display: none;
   }
-  .diferencial-item.ativo p {
+  .diferencial-item p.ativo {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 28rem /* 600px */) {
+  .introducao.p-container {
+    padding-left: var(--16p);
+    padding-right: var(--16p);
+  }
+
+  .introducao-conteudo {
+    padding-right: var(--20p);
+    max-height: 1000px;
+    gap: var(--28p) var(--40p);
+  }
+
+  .introducao-informacao {
+    background: none;
+  }
+
+  .introducao-informacao h1::before {
+    width: var(--16p);
+    height: var(--8p);
+    position: initial;
+  }
+
+  .introducao-informacao .lista-links {
+    margin-bottom: 0;
+  }
+
+  .diferencial {
+    order: 2;
+    padding-top: var(--120p);
   }
 
   .introducao-conteudo .imagem-perfil img {

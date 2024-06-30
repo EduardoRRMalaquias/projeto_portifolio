@@ -133,10 +133,6 @@ strong {
     font: var(--font-display-GG);
   }
 
-  .introducao .titulo-principal {
-    font: var(--font-display-m-b);
-  }
-
   .subtitulo-principal-grande {
     font: var(--font-primaria-G);
   }
@@ -162,5 +158,11 @@ strong {
 
   .texto-secundario {
     font: var(--font-texto-pp);
+  }
+}
+
+@media only screen and (max-width: 28rem /* 600px */) {
+  .introducao .titulo-principal {
+    font: var(--font-display-m-b);
   }
 }
