@@ -12,7 +12,6 @@ export default class VisibilidadeMenu {
 
   // alternar a visibilidade do menu de acordo com scroll
   visibilidadeMenu(event) {
-    console.log(window);
     if (scrollY > this.orientacaoRolagem) {
       // Rolagem para baixo
       this.header.classList.remove("visivel");
