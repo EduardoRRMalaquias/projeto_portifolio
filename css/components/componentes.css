@@ -274,25 +274,43 @@
 .tooltip-texto {
   position: absolute;
   top: 0;
+  display: flex;
+  justify-content: center;
   background-color: var(--cor-01);
   padding: var(--4p) var(--8p);
   border-radius: var(--4p);
   visibility: hidden;
-  opacity: 0;
   transition: opacity 0.5s ease;
 }
 .tooltip-texto::before {
   content: "";
   position: absolute;
-  left: 50%;
   top: 100%;
-  transform: translateX(-50%);
   border: var(--8p) solid;
   border-color: var(--cor-01) #0000 #0000 #0000;
 }
 
 .tooltip:hover .tooltip-texto {
-  top: -120%;
+  top: -100%;
   visibility: visible;
-  opacity: 1;
+  animation: deslizarPraCima 0.4s ease forwards;
+}
+
+@keyframes deslizarPraCima {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-25%);
+  }
+}
+
+@media only screen and (max-width: 58rem) {
+  .tooltip:hover .tooltip-texto {
+    top: -75%;
+    visibility: visible;
+    animation: deslizarPraCima 0.4s ease forwards;
+  }
 }
