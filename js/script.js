@@ -4,7 +4,7 @@ import initMenuHamburguer from "./modules/menu-hamburguer.js";
 import initCopyArea from "./modules/copy-area.js";
 import initAccordionDiferenciais from "./modules/accordion-diferenciais.js";
 
-const visibilidadeMenu = new VisibilidadeMenu('[data-visivel="scroll"]');
+const visibilidadeMenu = new VisibilidadeMenu("[data-visibilidade]");
 visibilidadeMenu.init();
 
 initLinkMenuAtivo();

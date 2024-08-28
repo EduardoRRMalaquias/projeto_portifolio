@@ -76,6 +76,7 @@ menu .menu-link {
   background-color: var(--cor-08);
 }
 
+/* icone do menui hamburguer */
 .menu-hamburguer span {
   display: block;
   height: 2px;
@@ -115,7 +116,7 @@ menu .menu-link {
   .header nav {
     display: none;
   }
-  .header nav.ativo {
+  .header nav.visivel {
     display: block;
     width: 100%;
     padding: var(--20p);
@@ -126,14 +127,14 @@ menu .menu-link {
     border-top: var(--2p) solid var(--cor-p4);
   }
 
-  .header nav.ativo menu {
+  .header nav.visivel menu {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--20p);
   }
 
-  .header nav.ativo .menu-link {
+  .header nav.visivel .menu-link {
     flex-grow: 1;
     width: 100%;
     text-align: center;
@@ -142,15 +143,15 @@ menu .menu-link {
     border-radius: var(--4p);
   }
 
-  .header nav.ativo .menu-link:hover {
+  .header nav.visivel .menu-link:hover {
     color: inherit;
     background-color: var(--cor-06);
   }
-  .header nav.ativo .menu-link.ativo:hover {
+  .header nav.visivel .menu-link.ativo:hover {
     background-color: var(--cor-08);
   }
 
-  .header nav.ativo menu li .menu-link.ativo::after {
+  .header nav.visivel menu li .menu-link.ativo::after {
     display: none;
   }
   .header nav menu li:has(.ativo) {

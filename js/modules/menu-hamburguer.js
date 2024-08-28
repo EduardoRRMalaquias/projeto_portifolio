@@ -6,8 +6,8 @@ export default function initMenuHamburguer() {
 
   function abrirFecharMenu(event) {
     if (event.type === "touchstart") event.preventDefault();
-    nav.classList.toggle("ativo");
-    const ativo = nav.classList.contains("ativo");
+    nav.classList.toggle("visivel");
+    const ativo = nav.classList.contains("visivel");
     event.currentTarget.setAttribute("aria-expanded", ativo);
     if (ativo) {
       event.currentTarget.setAttribute("aria-label", "Fechar Menu");
