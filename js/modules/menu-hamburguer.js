@@ -1,21 +1,43 @@
-export default function initMenuHamburguer() {
-  // Menu Hamburguer
+// Menu Hamburguer
+export default class MenuHamburguer {
+  constructor(menuHaburguer, navegacao, classeAtivadora, eventos) {
+    this.menuHaburguer = document.querySelector(menuHaburguer);
+    this.navegacao = document.querySelector(navegacao);
+    this.classeAtivadora = classeAtivadora;
 
-  const menuHaburguer = document.querySelector(".menu-hamburguer");
-  const nav = document.querySelector("nav");
+    // define os eventos de clique e toque como eventos padrao
+    if (eventos === undefined) this.eventos = ["touchstart", "click"];
+    else this.eventos = eventos;
 
-  function abrirFecharMenu(event) {
+    this.abrirFecharMenu = this.abrirFecharMenu.bind(this);
+  }
+
+  abrirFecharMenu(event) {
     if (event.type === "touchstart") event.preventDefault();
-    nav.classList.toggle("visivel");
-    const ativo = nav.classList.contains("visivel");
-    event.currentTarget.setAttribute("aria-expanded", ativo);
+    this.navegacao.classList.toggle(this.classeAtivadora);
+    this.verificarAcessibilidade();
+  }
+
+  verificarAcessibilidade() {
+    const ativo = this.navegacao.classList.contains(this.classeAtivadora);
+    this.menuHaburguer.setAttribute("aria-expanded", ativo);
     if (ativo) {
-      event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+      this.menuHaburguer.setAttribute("aria-label", "Fechar Menu");
     } else {
-      event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+      this.menuHaburguer.setAttribute("aria-label", "Abrir Menu");
     }
   }
 
-  menuHaburguer.addEventListener("click", abrirFecharMenu);
-  menuHaburguer.addEventListener("touchstart", abrirFecharMenu);
+  addMenuHamburguerEventos() {
+    this.eventos.forEach((evento) =>
+      this.menuHaburguer.addEventListener(evento, this.abrirFecharMenu)
+    );
+  }
+
+  init() {
+    if (this.menuHaburguer && this.navegacao) {
+      this.addMenuHamburguerEventos();
+    }
+    return this;
+  }
 }
