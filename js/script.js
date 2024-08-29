@@ -1,7 +1,7 @@
 import VisibilidadeMenu from "./modules/visibilidade-menu.js";
-import initLinkMenuAtivo from "./modules/link-menu-ativo.js";
+import LinkMenuAtivo from "./modules/link-menu-ativo.js";
 import MenuHamburguer from "./modules/menu-hamburguer.js";
-import initCopyArea from "./modules/copy-area.js";
+import CopyArea from "./modules/copy-area.js";
 import initAccordionDiferenciais from "./modules/accordion-diferenciais.js";
 
 const classeAtivadora = "visivel";
@@ -17,8 +17,12 @@ const menuHamburguer = new MenuHamburguer(
   '[data-menu="navegacao"]',
   classeAtivadora
 );
-menuHamburguer.init()
+menuHamburguer.init();
 
-initLinkMenuAtivo();
-initCopyArea();
+const linksMenuAtivo = new LinkMenuAtivo("[data-link]", "[data-secao]");
+linksMenuAtivo.init();
+
+const copyArea = new CopyArea("[data-copyarea]");
+copyArea.init()
+
 initAccordionDiferenciais();

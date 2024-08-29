@@ -1,28 +1,43 @@
-export default function initLinkMenuAtivo() {
-  // Menu ativo
-  let links = document.querySelectorAll(".menu-link");
-  let secoes = document.querySelectorAll(".secao");
+// Links de Menu ativo
+export default class LinkMenuAtivo {
+  constructor(links, secoes) {
+    this.links = document.querySelectorAll(links);
+    this.secoes = document.querySelectorAll(secoes);
 
-  window.addEventListener("scroll", linksMenuAtivo);
+    this.capturarDadosSecoes = this.capturarDadosSecoes.bind(this);
+    this.capturarSecoes = this.capturarSecoes.bind(this);
+  }
 
-  function linksMenuAtivo() {
-    secoes.forEach(capturarSecoes);
+  addEventoScroll() {
+    window.addEventListener("scroll", this.capturarDadosSecoes);
+  }
 
-    function capturarSecoes(secao) {
-      let topo = window.scrollY;
-      let topoSecao = secao.offsetTop - 90;
-      let alturaSecao = secao.offsetHeight;
-      let idSecao = secao.getAttribute("id");
+  capturarDadosSecoes() {
+    this.secoes.forEach(this.capturarSecoes);
+  }
 
-      if (topo >= topoSecao && topo < topoSecao + alturaSecao) {
-        links.forEach(ativarDesativarMenu);
-      }
-      function ativarDesativarMenu(link) {
-        link.classList.remove("ativo");
-        document
-          .querySelector(`.menu-link[href*='${idSecao}']`)
-          .classList.add("ativo");
-      }
+  capturarSecoes(secao) {
+    let topo = window.scrollY;
+    let topoSecao = secao.offsetTop - 90;
+    let alturaSecao = secao.offsetHeight;
+    let idSecao = secao.getAttribute("id");
+
+    if (topo >= topoSecao && topo < topoSecao + alturaSecao) {
+      this.links.forEach((link) => {
+        this.ativarDesativarMenu(link, idSecao);
+      });
     }
+  }
+
+  ativarDesativarMenu(link, idSecao) {
+    link.classList.remove("ativo");
+    document
+      .querySelector(`.menu-link[href*='${idSecao}']`)
+      .classList.add("ativo");
+  }
+
+  init() {
+    this.addEventoScroll();
+    return this;
   }
 }
