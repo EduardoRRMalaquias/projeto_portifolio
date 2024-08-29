@@ -1,23 +1,35 @@
-export default function initCopyArea() {
-  if (window.ClipboardJS) {
-    new ClipboardJS(".copy-area");
-  }
-
-  // copy area
-
-  const copyAreas = document.querySelectorAll(".copy-area");
-
-  function eventoCopia(copyArea) {
-    copyArea.addEventListener("click", confirmarCopia);
-
-    function confirmarCopia() {
-      copyArea.classList.add("copiado");
-      setTimeout(removerConfirmacao, 2000);
-
-      function removerConfirmacao() {
-        copyArea.classList.remove("copiado");
-      }
+// copy area
+export default class CopyArea {
+  constructor(copyAreas) {
+    if (window.ClipboardJS) {
+      new ClipboardJS(copyAreas);
     }
+
+    this.copyAreas = document.querySelectorAll(copyAreas);
+
+    this.confirmarCopia = this.confirmarCopia.bind(this);
   }
-  copyAreas.forEach(eventoCopia);
+
+  addEventoCopia() {
+    this.copyAreas.forEach((copyArea) => {
+      copyArea.addEventListener("click", this.confirmarCopia);
+    });
+  }
+
+  confirmarCopia(event) {
+    const copyarea = event.currentTarget;
+    copyarea.classList.add("copiado");
+    setTimeout(() => {
+      this.removerConfirmacao(copyarea);
+    }, 2000);
+  }
+
+  removerConfirmacao(copyarea) {
+    copyarea.classList.remove("copiado");
+  }
+
+  init() {
+    this.addEventoCopia();
+    return this;
+  }
 }
