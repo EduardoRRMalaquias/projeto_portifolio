@@ -1,3 +1,5 @@
+import clickOutside from "./click-outside.js";
+
 // Menu Hamburguer
 export default class MenuHamburguer {
   constructor(menuHaburguer, navegacao, classeAtivadora, eventos) {
@@ -15,6 +17,9 @@ export default class MenuHamburguer {
   abrirFecharMenu(event) {
     if (event.type === "touchstart") event.preventDefault();
     this.navegacao.classList.toggle(this.classeAtivadora);
+    clickOutside(this.navegacao, this.eventos, () => {
+      this.navegacao.classList.remove(this.classeAtivadora);
+    });
     this.verificarAcessibilidade();
   }
 
