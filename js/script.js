@@ -23,6 +23,6 @@ const linksMenuAtivo = new LinkMenuAtivo("[data-link]", "[data-secao]");
 linksMenuAtivo.init();
 
 const copyArea = new CopyArea("[data-copyarea]");
-copyArea.init()
+copyArea.init();
 
 initAccordionDiferenciais();
