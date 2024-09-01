@@ -1,0 +1,223 @@
+.modal-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  background-color: #40404099;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+@media (prefers-color-scheme: light) {
+  .modal-container {
+    background-color: #40404099;
+  }
+}
+
+.modal-container::-webkit-scrollbar {
+  width: var(--12p);
+}
+
+.modal-container::-webkit-scrollbar-track {
+  background: var(--cor-10);
+  border: 1px solid var(--cor-08);
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+  background-color: var(--cor-p4);
+  border-radius: var(--20p);
+  border: var(--4p) solid var(--cor-10);
+}
+
+.modal-content {
+  width: 90vw;
+  max-width: 75rem;
+  position: relative;
+  top: 5%;
+  background-color: var(--cor-09);
+  padding: 32px;
+  border-radius: 32px;
+}
+
+.modal-content:has(.informacoes.ativo) {
+  margin-top: 350px;
+}
+
+.modal-content .info-geral {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.modal-content .informacoes {
+  display: none;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+.modal-content .informacoes.ativo {
+  display: grid;
+}
+
+.modal-content .info-geral p {
+  padding: 32px 0;
+}
+
+.modal-content .destaque {
+  background-color: var(--cor-00);
+  position: absolute;
+  padding: 4px 16px;
+  border-radius: 8px;
+  top: -8px;
+  left: 32px;
+}
+
+.modal-content .fechar {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 32px;
+  right: 32px;
+  background-color: var(--cor-09);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-indent: -999px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 50000;
+}
+.modal-content .fechar::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: var(--cor-07);
+  transform: rotate(45deg);
+  border-radius: 2px;
+  position: absolute;
+}
+.modal-content .fechar::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: var(--cor-07);
+  transform: rotate(-45deg);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.modal-content .fechar:hover {
+  background-color: var(--cor-08);
+}
+.modal-content .fechar:hover::after {
+  content: "";
+  background-color: var(--cor-00);
+}
+.modal-content .fechar:hover::before {
+  content: "";
+  background-color: var(--cor-00);
+}
+
+.mais-informacoes-item dt {
+  border-bottom: 2px solid var(--cor-07);
+  padding: 12px 0;
+  margin-bottom: 32px;
+  border-radius: 8px;
+}
+.mais-informacoes-item dt:hover {
+  background-color: var(--cor-08);
+}
+
+.mais-informacoes-item dt button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--12p);
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0 24px;
+}
+
+.mais-informacoes-item dt button::after {
+  content: "";
+  width: var(--12p);
+  height: var(--8p);
+  background: url(../../img/icones/seta-indicador.svg) no-repeat;
+  transition: 0.3s;
+}
+
+.modal-content h2 {
+  margin-bottom: 32px;
+}
+
+.modal-content h4 {
+  margin-bottom: 32px;
+}
+
+.modal-content .redes {
+  margin-bottom: 20px;
+}
+
+.modal-content .lista-links {
+  margin-left: auto;
+}
+
+.modal-content .tecnologias {
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 980px) {
+  .modal-content .info-geral,
+  .modal-content .informacoes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    top: 25%;
+  }
+
+  .modal-content .info-geral,
+  .modal-content .informacoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .modal-container {
+    justify-content: flex-end;
+  }
+
+  .modal-content {
+    top: 25%;
+    left: 0;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .modal-content .fechar {
+    top: 32px;
+    right: 20px;
+  }
+}

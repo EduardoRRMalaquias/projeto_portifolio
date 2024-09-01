@@ -4,18 +4,18 @@ import MenuHamburguer from "./modules/menu-hamburguer.js";
 import CopyArea from "./modules/copy-area.js";
 import initAccordionDiferenciais from "./modules/accordion-diferenciais.js";
 
-const classeAtivadora = "visivel";
+const classeAtivadoraHeader = "visivel";
 
 const visibilidadeMenu = new VisibilidadeMenu(
   "[data-visibilidade]",
-  classeAtivadora
+  classeAtivadoraHeader
 );
 visibilidadeMenu.init();
 
 const menuHamburguer = new MenuHamburguer(
   '[data-menu="hamburguer"]',
   '[data-menu="navegacao"]',
-  classeAtivadora
+  classeAtivadoraHeader
 );
 menuHamburguer.init();
 
@@ -23,6 +23,6 @@ const linksMenuAtivo = new LinkMenuAtivo("[data-link]", "[data-secao]");
 linksMenuAtivo.init();
 
 const copyArea = new CopyArea("[data-copyarea]");
-copyArea.init()
+copyArea.init();
 
 initAccordionDiferenciais();
