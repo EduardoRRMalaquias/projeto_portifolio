@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: center;
   overflow: auto;
-  padding: 50px 0;
 }
 
 .modal-container.ativo {
@@ -42,9 +41,9 @@
   width: 90vw;
   max-width: 75rem;
   position: relative;
+  top: 5%;
   background-color: var(--cor-09);
   padding: 32px;
-  margin-top: 50px;
   border-radius: 32px;
 }
 
@@ -186,26 +185,39 @@
   margin-top: 60px;
 }
 
-@media only screen and (max-width: 58rem) {
-
-  .modal-container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    z-index: 2000;
-    background-color: #40404099;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-    padding: 50px 0;
+@media only screen and (max-width: 980px) {
+  .modal-content .info-geral,
+  .modal-content .informacoes {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width: 38rem /* 600px */) {
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    top: 25%;
+  }
+
+  .modal-content .info-geral,
+  .modal-content .informacoes {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media only screen and (max-width: 28rem /* 600px */) {
+@media only screen and (max-width: 440px) {
+  .modal-container {
+    justify-content: flex-end;
+  }
+
+  .modal-content {
+    top: 25%;
+    left: 0;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .modal-content .fechar {
+    top: 32px;
+    right: 20px;
+  }
 }
