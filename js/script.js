@@ -2,7 +2,7 @@ import VisibilidadeMenu from "./modules/visibilidade-menu.js";
 import LinkMenuAtivo from "./modules/link-menu-ativo.js";
 import MenuHamburguer from "./modules/menu-hamburguer.js";
 import CopyArea from "./modules/copy-area.js";
-import initAccordionDiferenciais from "./modules/accordion-diferenciais.js";
+import Accordion from "./modules/accordion.js";
 
 const classeAtivadoraHeader = "visivel";
 
@@ -25,4 +25,5 @@ linksMenuAtivo.init();
 const copyArea = new CopyArea("[data-copyarea]");
 copyArea.init();
 
-initAccordionDiferenciais();
+const accordion = new Accordion('[data-accordion="button"]');
+accordion.init()
