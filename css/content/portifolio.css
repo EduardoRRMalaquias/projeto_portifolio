@@ -30,6 +30,12 @@
 
 .projeto-imagem {
   height: 360px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projeto-imagem:hover {
+  opacity: 0.5;
 }
 
 .projeto-informacao {
