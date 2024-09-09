@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,900&family=Roboto&display=swap" rel="stylesheet">
 
+  <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
   <link rel="preload" href="./style.min.css" as="style">
   <link rel="stylesheet" href="./style.min.css">
 
@@ -18,7 +19,7 @@
 
 <body>
   <header class="header-bg visivel" data-visibilidade>
-    <div class="header container p-container">
+    <div class="header container p-container" data-aos="fade-down">
       <a href="./index.html#introducao">
         <picture class="logo">
           <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="./img/logo-pequena-ligth.svg 58w" type="image/svg+xml" width="58" height="34">
@@ -43,7 +44,7 @@
   </header>
 
   <section class="introducao p-container" id="introducao" aria-label="Introducão" data-secao>
-    <article class="introducao-conteudo card grande container p-g">
+    <article class="introducao-conteudo card grande container p-g" data-aos="fade-left">
       <div class="introducao-informacao">
         <h2 class="subtitulo-secundario-grande cor-p2">EAE👋</br> SOU EDUARDO</h2>
         <h1 class="titulo-principal cor-00 decoracao">PROGRAMADOR Front-End</h1>
@@ -124,15 +125,15 @@
       <h2 class="titulo-principal cor-00 decoracao">SOBRE MIM</h2>
       <h3 class="subtitulo-secundario-grande cor-04">Eduardo rodrigues Rangel Malaquias - 09/08/2004</h3>
       <article class="informaçoes-sobre">
-        <div class="informaçoes-sobre-item card borda p-p">
+        <div class="informaçoes-sobre-item card borda p-p" data-aos="fade-right">
           <h4 class="subtitulo-principal-grande cor-p2">Perfil</h4>
           <p class="texto-secundario cor-03"><strong>Comunicativo</strong> e imerso em tecnologia. Formado no curso <strong>Técnico Em Informática</strong> e desde então me mantenho atualizado buscando sempre mais conhecimento na área. Atualmente cursando <strong>Sistemas da Informação</strong>, aprendendo <strong>Pyton, Node.JS</strong> e disponível para o mercado de trabalho.</p>
         </div>
-        <div class="informaçoes-sobre-item card borda p-p">
+        <div class="informaçoes-sobre-item card borda p-p" data-aos="fade-right">
           <h4 class="subtitulo-principal-grande cor-p2">Objetivo</h4>
           <p class="texto-secundario cor-03">Tenho aprimorado meus conhecimentos, com objetivo de atuar como <strong>Programador Front-End</strong> onde consiga colocar em prática todo o conhecimento adquirido em <strong>HTML/CSS, UI Design, JavaScript, React/Vue</strong>.</p>
         </div>
-        <div class="informaçoes-sobre-item habilidades card borda p-p">
+        <div class="informaçoes-sobre-item habilidades card borda p-p" data-aos="fade-left">
           <h4 class="subtitulo-principal-grande cor-p2">Habilidades</h4>
           <div class="tecnologias">
             <figure class="habilidades-item">
@@ -249,52 +250,54 @@
     </section>
 
     <section class="experiencia">
-      <article class="profissional">
-        <div class="card experiencia-item p-m">
-          <span class="destaque cor-11">março / 2023 > atualmente</span>
-          <h4 class="subtitulo-principal-medio cor-p2">Analista de Rede</h4>
-          <span class="subtitulo-secundario-grande cor-04">brasil center</span>
-          <p class="texto-secundario cor-05"><strong>Análise de Dados</strong> dos clientes e dos níveis de sinais da rede da Claro brasil, com foco em <strong>resolução de problemas</strong> e produção de <strong>relatórios técnico</strong>.</p>
-          <a class="btn-primario texto-funcional1-pequeno" href="https://www.linkedin.com/feed/update/urn:li:activity:7148415225640148992/" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
-        </div>
-        <div class="card experiencia-item p-m">
-          <span class="destaque cor-11">março/2023 > atualmente</span>
-          <h4 class="subtitulo-principal-medio cor-p2">Freelancer</h4>
-          <span>
-            <ul class="flex">
-              <li><a class="link" href="./index.html#projetos">Portifolio Frontend</a></li>
-              <li><a class="link" href="https://www.instagram.com/du_design/">Portifolio Du’Design</a></li>
+      <div data-aos="fade-right">
+        <article class="profissional">
+          <div class="card experiencia-item p-m">
+            <span class="destaque cor-11">março / 2023 > atualmente</span>
+            <h4 class="subtitulo-principal-medio cor-p2">Analista de Rede</h4>
+            <span class="subtitulo-secundario-grande cor-04">brasil center</span>
+            <p class="texto-secundario cor-05"><strong>Análise de Dados</strong> dos clientes e dos níveis de sinais da rede da Claro brasil, com foco em <strong>resolução de problemas</strong> e produção de <strong>relatórios técnico</strong>.</p>
+            <a class="btn-primario texto-funcional1-pequeno" href="https://www.linkedin.com/feed/update/urn:li:activity:7148415225640148992/" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
+          </div>
+          <div class="card experiencia-item p-m">
+            <span class="destaque cor-11">março/2023 > atualmente</span>
+            <h4 class="subtitulo-principal-medio cor-p2">Freelancer</h4>
+            <span>
+              <ul class="flex">
+                <li><a class="link" href="./index.html#projetos">Portifolio Frontend</a></li>
+                <li><a class="link" href="https://www.instagram.com/du_design/">Portifolio Du’Design</a></li>
+              </ul>
+            </span>
+            <p class="texto-secundario cor-05">Mais de dois anos estudando programação em cursos técnico, extracurriculares e faculdade; mais de um ano realizando estudos de caso pessoais e acadêmicos e projetos freelancer de programação, design e publicidade.</p>
+            <a class="btn-primario texto-funcional1-pequeno" href="" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
+          </div>
+        </article>
+        <article class="educacional">
+          <div class="card experiencia-item p-m">
+            <h4 class="subtitulo-principal-medio cor-p2">Sistemas da informação</h4>
+            <span class="subtitulo-secundario-grande cor-04">Faesa</span>
+            <p class="texto-secundario cor-05">Cursando o 1° período de sistemas da informação, aprendendo modelagem de softwer e linguagem pyton.</p>
+            <a class="btn-primario texto-funcional1-pequeno" href="https://www.faesa.br/cursos-graduacao/sistemas-de-informacao" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
+          </div>
+          <div class="card experiencia-item p-m">
+            <h4 class="subtitulo-principal-medio cor-p2">Cursos extracurriculares</h4>
+            <span class="subtitulo-secundario-grande cor-04">Devmidia,
+              origamid</span>
+            <ul class="texto-secundario cor-05">
+              <li>Web Design Front-End - Origamid</li>
+              <li>Carreira FullStak javascript - DevMidia</li>
             </ul>
-          </span>
-          <p class="texto-secundario cor-05">Mais de dois anos estudando programação em cursos técnico, extracurriculares e faculdade; mais de um ano realizando estudos de caso pessoais e acadêmicos e projetos freelancer de programação, design e publicidade.</p>
-          <a class="btn-primario texto-funcional1-pequeno" href="" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
-        </div>
-      </article>
-      <article class="educacional">
-        <div class="card experiencia-item p-m">
-          <h4 class="subtitulo-principal-medio cor-p2">Sistemas da informação</h4>
-          <span class="subtitulo-secundario-grande cor-04">Faesa</span>
-          <p class="texto-secundario cor-05">Cursando o 1° período de sistemas da informação, aprendendo modelagem de softwer e linguagem pyton.</p>
-          <a class="btn-primario texto-funcional1-pequeno" href="https://www.faesa.br/cursos-graduacao/sistemas-de-informacao" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
-        </div>
-        <div class="card experiencia-item p-m">
-          <h4 class="subtitulo-principal-medio cor-p2">Cursos extracurriculares</h4>
-          <span class="subtitulo-secundario-grande cor-04">Devmidia,
-            origamid</span>
-          <ul class="texto-secundario cor-05">
-            <li>Web Design Front-End - Origamid</li>
-            <li>Carreira FullStak javascript - DevMidia</li>
-          </ul>
-          <a class="btn-primario texto-funcional1-pequeno" href="https://www.origamid.com/certificate/7d204112" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
-        </div>
-        <div class="card experiencia-item p-m">
-          <h4 class="subtitulo-principal-medio cor-p2">Técnico em
-            informática</h4>
-          <span class="subtitulo-secundario-grande cor-04">senac</span>
-          <p class="texto-secundario cor-05">Formado em 2022. Montagem e manutenção de computadores, redes com servidores, projeto Desktop com Java e mysql, e Web com java Spring, HTML, CSS, Bootstrap e mysql</p>
-          <a class="btn-primario texto-funcional1-pequeno" href="" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
-        </div>
-      </article>
+            <a class="btn-primario texto-funcional1-pequeno" href="https://www.origamid.com/certificate/7d204112" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
+          </div>
+          <div class="card experiencia-item p-m">
+            <h4 class="subtitulo-principal-medio cor-p2">Técnico em
+              informática</h4>
+            <span class="subtitulo-secundario-grande cor-04">senac</span>
+            <p class="texto-secundario cor-05">Formado em 2022. Montagem e manutenção de computadores, redes com servidores, projeto Desktop com Java e mysql, e Web com java Spring, HTML, CSS, Bootstrap e mysql</p>
+            <a class="btn-primario texto-funcional1-pequeno" href="" target="_blank" rel="noopener noreferrer">MAIS DETALHES</a>
+          </div>
+        </article>
+      </div>
     </section>
   </section>
 
@@ -302,9 +305,9 @@
     <section class="portifolio container p-container">
       <h2 class="titulo-principal cor-00 decoracao">Portifolio</h2>
       <p class="texto-primario cor-03">Constantemente estudando e realizando projetos visando aplicar da forma mais eficiente todas as tecnologias FrontEnd. Confira a baixo um pouco do meu trabalho acessando meus projetos em destaques. Para conferir mais projetos acesse o meu <a class="link" href="https://github.com/EduardoRRMalaquias" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a>.</p>
-      <article class="portifolio-conteudo card grande borda p-g">
+      <article class="portifolio-conteudo card grande borda p-g" data-aos="fade-up">
         <h4 class="subtitulo-secundario-grande cor-04">Confira os projetos em destaque</h4>
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-right">
           <figure class="projeto-imagem" data-abrimodal="estampart">
             <img src="img/projetos/projeto-estampart.jpg" alt="Estampart estamparia e confecção" title="Estampart estamparia e confecção">
           </figure>
@@ -366,7 +369,7 @@
             </ul>
           </div>
         </div>
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-left">
           <figure class="projeto-imagem" data-abrimodal="dudesign">
             <img src="img/projetos/projeto-dudesign.jpg" alt="Du'design design inteligente publicidade impactante" title="Du'design design inteligente publicidade impactante">
           </figure>
@@ -414,7 +417,7 @@
             </ul>
           </div>
         </div>
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-right">
           <figure class="projeto-imagem" data-abrimodal="bikcraft">
             <img src="img/projetos/projeto-bikcraft.jpg" alt="Bikecraft">
           </figure>
@@ -469,7 +472,7 @@
             </ul>
           </div>
         </div>
-        <div class="projeto">
+        <div class="projeto" data-aos="fade-left">
           <figure style="max-width: 100%; height: 360px; background-color: gray;" class="projeto-imagem" data-abrimodal="wildBeast">
             <img src="" alt="">
           </figure>
@@ -511,7 +514,9 @@
           </div>
         </div>
       </article>
-      <a class="btn-primario  grande texto-funcional1-grande" href="https://github.com/EduardoRRMalaquias" target="_blank" rel="noopener noreferrer">TODOS OS PROJETOS</a>
+      <div data-aos="fade-down">
+        <a class="btn-primario  grande texto-funcional1-grande" href="https://github.com/EduardoRRMalaquias" target="_blank" rel="noopener noreferrer">TODOS OS PROJETOS</a>
+      </div>
     </section>
   </main>
 
@@ -520,7 +525,7 @@
       <h2 class="titulo-principal cor-00 decoracao">Contato</h2>
       <p class="texto-primario cor-03">Estou disponível e preparado para trabalhar em novos projetos no momento. Entre em contato com uma proposta e marcamos uma conversa</p>
       <address class="contatos">
-        <article class="contato-card card borda p-p">
+        <article class="contato-card card borda p-p" data-aos="fade-down-right">
           <figure class="contato-icone">
             <picture>
               <source media="(prefers-color-scheme: light)" srcset="./img/icones/linkedin-light.svg 32w" type="image/svg+xml" width="32" height="32">
@@ -536,7 +541,7 @@
           </div>
           <a class="btn-primario texto-funcional1-pequeno" href="https://www.linkedin.com/in/eduardo-rr-malaquias/" target="_blank" rel="noopener noreferrer">ENTRE EM CONTATO</a>
         </article>
-        <article class="contato-card principal card borda p-p">
+        <article class="contato-card principal card borda p-p" data-aos="fade-left">
           <figure class="contato-icone">
             <picture>
               <source media="(prefers-color-scheme: light)" srcset="./img/icones/whatsapp-ligth.svg 32w" type="image/svg+xml" width="32" height="32">
@@ -553,7 +558,7 @@
           <p class="texto-terciario  cor-04">Contato direto e na hora pelo WhatsApp. Entre em contato com uma proposta de projeto ou emprego <a href="https://www.canva.com/design/DAGLlU4-LfM/2qRJTa_uvwzCEil8YQj4BA/edit" class="link" target="_blank" rel="noopener noreferrer">acesse o currículo</a></p>
           <a class="btn-primario texto-funcional1-pequeno" href="https://wa.me/5527998911499?text=Ola%F0%9F%91%8B%2C+Eduardo+Programador+Front-End" target="_blank" rel="noopener noreferrer">ENTRE EM CONTATO</a>
         </article>
-        <article class="contato-card principal card borda p-p">
+        <article class="contato-card principal card borda p-p" data-aos="fade-right">
           <figure class="contato-icone">
             <picture>
               <source media="(prefers-color-scheme: light)" srcset="./img/icones/github-light.svg 48w" type="image/svg+xml" width="48" height="48">
@@ -570,7 +575,7 @@
           <p class="texto-terciario  cor-04">Acesse o perfil do GitHub e veja os repositórios com os códigos dos projetos, Confira o <a href="https://github.com/EduardoRRMalaquias/projeto_bikcraft" class="link" target="_blank" rel="noopener noreferrer">projeto destaque</a></p>
           <a class="btn-primario texto-funcional1-pequeno" href="https://github.com/EduardoRRMalaquias" target="_blank" rel="noopener noreferrer">ENTRE EM CONTATO</a>
         </article>
-        <article class="contato-card card borda p-p">
+        <article class="contato-card card borda p-p" data-aos="fade-up-left">
           <figure class="contato-icone">
             <picture>
               <source media="(prefers-color-scheme: light)" srcset="./img/icones/gmail-ligth.svg 32w" type="image/svg+xml" width="32" height="32">
@@ -610,7 +615,7 @@
         </g>
       </svg>
     </div>
-    <section class="footer-conteudo container">
+    <section class="footer-conteudo container" data-aos="fade-up">
       <ul class="redes flex">
         <li>
           <a href="https://www.instagram.com/du.dustb" target="_blank" rel="noopener noreferrer">

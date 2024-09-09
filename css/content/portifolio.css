@@ -15,6 +15,7 @@
 
 .portifolio-conteudo {
   margin-bottom: var(--60p);
+  overflow: hidden;
 }
 
 .portifolio-conteudo h4 {
