@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev:js": "webpack --mode development --watch",
-    "dev:css": "cleancss -o style.min.css css/style.css --watch"
+    "dev:css": "cleancss -o style.min.css css/style.css --with-rebase --watch"
   },
   "author": "",
   "license": "ISC",
