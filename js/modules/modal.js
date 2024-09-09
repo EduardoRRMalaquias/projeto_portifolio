@@ -1,5 +1,5 @@
 export default class Modal {
-  constructor(botaoAbrir, botaoFechar, containerModal) {
+  constructor(botaoAbrir, botaoFechar, containerModal, modals) {
     this.botoesAbrir = document.querySelectorAll(botaoAbrir);
     this.botoesFechar = document.querySelectorAll(botaoFechar);
     this.containersModals = document.querySelectorAll(containerModal);
@@ -27,7 +27,7 @@ export default class Modal {
   // fecha o modal a clicar do lado de fora
   fecharClickForaModal(event) {
     this.containersModals.forEach((modal) => {
-      if (event.currentTarget === modal) {
+      if (event.target === modal) {
         this.fecharModal(event);
       }
     });
