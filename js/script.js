@@ -30,8 +30,8 @@ const accordion = new Accordion('[data-accordion="button"]');
 accordion.init();
 
 const modal = new Modal(
-  '[data-modal="Abrir"]',
+  "[data-abrimodal]",
   '[data-modal="fechar"]',
-  "[data-containermodal]"
+  '[data-modal="container"]'
 );
 modal.init();

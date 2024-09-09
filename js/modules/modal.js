@@ -5,34 +5,42 @@ export default class Modal {
     this.containersModals = document.querySelectorAll(containerModal);
     this.class = "ativo";
 
-    this.abrirfecharModal = this.abrirfecharModal.bind(this);
+    this.abrirModal = this.abrirModal.bind(this);
+    this.fecharModal = this.fecharModal.bind(this);
     this.fecharClickForaModal = this.fecharClickForaModal.bind(this);
   }
 
-  abrirfecharModal(event) {
-    event.preventDefault();
-    const modal = event.currentTarget;
-    const idModal = modal.getAttribute("data-containermodal");
-    
+  fecharModal() {
+    this.containersModals.forEach((modal) => {
+      modal.classList.remove(this.class);
+    });
+  }
 
-    this.containersModals.classList.toggle(this.class);
+  abrirModal(event) {
+    event.preventDefault();
+    const btnModal = event.currentTarget;
+    const idModal = btnModal.getAttribute("data-abrimodal");
+    const modal = document.getElementById(idModal);
+    modal.classList.add(this.class);
   }
 
   // fecha o modal a clicar do lado de fora
   fecharClickForaModal(event) {
-    if (event.target === this.containersModals) {
-      this.abrirfecharModal(event);
-    }
+    this.containersModals.forEach((modal) => {
+      if (event.currentTarget === modal) {
+        this.fecharModal(event);
+      }
+    });
   }
 
   // chamar o adicionador dos eventos nos componentes do modal
   chamarModalEventos() {
-    this.addModalEventos(this.botoesAbrir, this.abrirfecharModal);
-    this.addModalEventos(this.botoesFechar, this.abrirfecharModal);
+    this.addModalEventos(this.botoesAbrir, this.abrirModal);
+    this.addModalEventos(this.botoesFechar, this.fecharModal);
     this.addModalEventos(this.containersModals, this.fecharClickForaModal);
   }
 
-  //adicionar os eventos do modalx
+  //adicionar os eventos do modals
   addModalEventos(items, callback) {
     items.forEach((item) => {
       item.addEventListener("click", callback);
