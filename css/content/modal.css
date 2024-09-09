@@ -14,6 +14,31 @@
 
 .modal-container.ativo {
   display: flex;
+  animation: opacidade 0.5s ease forwards;
+}
+
+.modal-container.ativo .modal-content {
+  animation: slide 0.3s ease forwards;
+}
+
+@keyframes opacidade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @media (prefers-color-scheme: light) {
