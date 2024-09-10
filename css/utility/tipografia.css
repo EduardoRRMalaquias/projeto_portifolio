@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Lemon Bold";
-  src: url(fonts/LEMONMILK-Bold.otf) format("opentype");
+  src: url(../../fonts/LEMONMILK-Bold.otf) format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Lemon light";
-  src: url(fonts/LEMONMILK-Light.otf) format("opentype");
+  src: url(../../fonts/LEMONMILK-Light.otf) format("opentype");
   font-weight: 300;
   font-style: normal;
 }
