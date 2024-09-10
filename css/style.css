@@ -2,6 +2,7 @@
 
 /* global*/
 @import "global/global.css";
+@import "global/animacao-aos.css";
 
 /* ultilitario */
 @import "utility/espacamento.css";

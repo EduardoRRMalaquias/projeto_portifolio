@@ -19,6 +19,7 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--40p) var(--32p);
   margin-bottom: var(--60p);
+  overflow: hidden;
 }
 
 .informaçoes-sobre-item h4 {

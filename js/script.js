@@ -4,6 +4,7 @@ import MenuHamburguer from "./modules/menu-hamburguer.js";
 import CopyArea from "./modules/copy-area.js";
 import Accordion from "./modules/accordion.js";
 import Modal from "./modules/modal.js";
+import AOS from "aos";
 
 const classeAtivadoraHeader = "visivel";
 
@@ -35,3 +36,5 @@ const modal = new Modal(
   '[data-modal="container"]'
 );
 modal.init();
+
+AOS.init();

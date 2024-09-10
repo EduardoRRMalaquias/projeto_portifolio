@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev:js": "webpack --mode development --watch",
-    "dev:css": "cleancss -o style.min.css css/style.css --watch"
+    "dev:css": "cleancss -o style.min.css css/style.css --with-rebase --watch"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +19,8 @@
     "clean-css-cli": "^5.6.3",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

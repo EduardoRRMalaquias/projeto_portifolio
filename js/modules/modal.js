@@ -1,5 +1,5 @@
 export default class Modal {
-  constructor(botaoAbrir, botaoFechar, containerModal, modals) {
+  constructor(botaoAbrir, botaoFechar, containerModal) {
     this.botoesAbrir = document.querySelectorAll(botaoAbrir);
     this.botoesFechar = document.querySelectorAll(botaoFechar);
     this.containersModals = document.querySelectorAll(containerModal);
@@ -48,7 +48,9 @@ export default class Modal {
   }
 
   init() {
-    this.chamarModalEventos();
+    if (this.botoesAbrir.length && this.botoesFechar && this.containersModals) {
+      this.chamarModalEventos();
+    }
     return this;
   }
 }

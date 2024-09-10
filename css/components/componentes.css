@@ -188,7 +188,7 @@
   align-items: center;
 }
 
-.copy-conteudo::before {
+.js .copy-conteudo::before {
   content: "Clique e copie";
   display: flex;
   position: absolute;
@@ -221,7 +221,7 @@
   }
 }
 
-.copy-conteudo:after {
+.js .copy-conteudo:after {
   content: " ";
   display: block;
   width: var(--120p);

@@ -41,7 +41,7 @@ menu .menu-link {
 }
 
 /* animaçã do menu ativo*/
-.header .menu-link.ativo::after {
+.js .header .menu-link.ativo::after {
   content: "";
   display: block;
   width: 100%;
@@ -49,7 +49,7 @@ menu .menu-link {
   background-color: currentColor;
   border-radius: var(--2p);
 }
-.header .menu-link.ativo:hover {
+.js .header .menu-link.ativo:hover {
   color: inherit;
 }
 
@@ -113,10 +113,11 @@ menu .menu-link {
     padding-top: var(--28p);
   }
 
-  .header nav {
+  .js .header nav {
     display: none;
   }
-  .header nav.visivel {
+  .js .header nav.visivel,
+  .header nav {
     display: block;
     width: 100%;
     padding: var(--20p);
@@ -127,14 +128,16 @@ menu .menu-link {
     border-top: var(--2p) solid var(--cor-p4);
   }
 
-  .header nav.visivel menu {
+  .js .header nav.visivel menu,
+  .header nav menu {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--20p);
   }
 
-  .header nav.visivel .menu-link {
+  .js .header nav.visivel .menu-link,
+  .header nav .menu-link {
     flex-grow: 1;
     width: 100%;
     text-align: center;
@@ -143,18 +146,19 @@ menu .menu-link {
     border-radius: var(--4p);
   }
 
-  .header nav.visivel .menu-link:hover {
+  .js .header nav.visivel .menu-link:hover,
+  .header nav .menu-link:hover {
     color: inherit;
     background-color: var(--cor-06);
   }
-  .header nav.visivel .menu-link.ativo:hover {
+  .js .header nav.visivel .menu-link.ativo:hover {
     background-color: var(--cor-08);
   }
 
   .header nav.visivel menu li .menu-link.ativo::after {
     display: none;
   }
-  .header nav menu li:has(.ativo) {
+  .js .header nav menu li:has(.ativo) {
     display: block;
     border-bottom: var(--2p) solid var(--cor-01);
   }
