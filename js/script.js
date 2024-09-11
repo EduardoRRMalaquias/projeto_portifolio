@@ -5,6 +5,13 @@ import CopyArea from "./modules/copy-area.js";
 import Accordion from "./modules/accordion.js";
 import Modal from "./modules/modal.js";
 import AOS from "aos";
+import DarkLigthMode from "./modules/modo-ligth-dark.js";
+
+const darkLigthMode = new DarkLigthMode(
+  '[data-ligth-dark-mode="botao"]',
+  '[data-ligth-dark-mode="check"]'
+);
+darkLigthMode.init();
 
 const classeAtivadoraHeader = "visivel";
 
