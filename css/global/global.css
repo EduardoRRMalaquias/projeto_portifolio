@@ -14,7 +14,9 @@ body {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-
+.ligth body {
+  background-color: var(--cor-09);
+}
 
 @media (prefers-color-scheme: light) {
   body {
