@@ -1,3 +1,5 @@
+/* declaracoes e variaveis */
+
 :root {
   --sombra-forte: 0 var(--4p) var(--4p) var(--2p) #00000040;
   --sombra-fraca: 0 var(--2p) var(--4p) 0 #00000033;
@@ -17,6 +19,26 @@
     --check-icone: url(../../img/icones/check-ligth.svg);
   }
 }
+
+.dark:root {
+  --sombra-forte: 0 var(--4p) var(--4p) var(--2p) #00000040;
+  --sombra-fraca: 0 var(--2p) var(--4p) 0 #00000033;
+  --briho: 0 1px var(--4p) 0 #075287e1;
+  --brilho-forte: 0 1px var(--4p) 1px #075287e1;
+  --brilho-check: 0 0 var(--4p) 1px #07518799;
+  --sombra-interna-active: inset 0 var(--2p) var(--2p) 0 #00000026;
+  --sombra-interna-check: inset 0 0 var(--4p) var(--2p) #000000cc;
+  --copy-icone: url(../../img/icones/copy.svg);
+  --check-icone: url(../../img/icones/check.svg);
+}
+
+.ligth:root {
+  --sombra-interna-check: inset 0 0 var(--2p) 1px #00000059;
+  --copy-icone: url(../../img/icones/copy-ligth.svg);
+  --check-icone: url(../../img/icones/check-ligth.svg);
+}
+
+/* eslitilaçoes dos componentes */
 
 /*=================================================
                  botao de link
@@ -46,6 +68,8 @@
   box-shadow: var(--sombra-fraca), var(--sombra-interna-active);
 }
 
+/* modo Ligth*/
+
 @media (prefers-color-scheme: light) {
   .btn-link:hover {
     --gradiente-primario: #82d1f2, #4ca8cf;
@@ -58,6 +82,30 @@
     background: linear-gradient(var(--gradiente-primario2));
     box-shadow: var(--sombra-fraca), var(--sombra-interna-active);
   }
+}
+
+.dark .btn-link:hover {
+  --gradiente-primario: #82d1f2, #4ca8cf;
+  --cor-p1: #c5f1ff;
+  background: linear-gradient(var(--gradiente-primario));
+  border-color: var(--cor-p1);
+  color: var(--cor-p7);
+}
+.dark .btn-link:active {
+  background: linear-gradient(var(--gradiente-primario2));
+  box-shadow: var(--sombra-fraca), var(--sombra-interna-active);
+}
+
+.ligth .btn-link:hover {
+  --gradiente-primario: #82d1f2, #4ca8cf;
+  --cor-p1: #c5f1ff;
+  background: linear-gradient(var(--gradiente-primario));
+  border-color: var(--cor-p1);
+  color: var(--cor-p7);
+}
+.ligth .btn-link:active {
+  background: linear-gradient(var(--gradiente-primario2));
+  box-shadow: var(--sombra-fraca), var(--sombra-interna-active);
 }
 
 /* imagem botao link*/
@@ -153,6 +201,17 @@
   }
 }
 
+/* modo ligth*/
+.dark .btn-ligth-dark-mode::after {
+  background: var(--cor-06) url(../../img/icones/dark_mode.svg) no-repeat center;
+  border-radius: 100%;
+}
+
+.ligth .btn-ligth-dark-mode::after {
+  background: var(--cor-08) url(../../img/icones/light-mode.svg) no-repeat
+    center;
+}
+
 /* movimentos do indicador*/
 .btn-ligth-dark-mode:has(.ligth-dark-mode:checked)::after {
   right: var(--12p);
@@ -239,10 +298,20 @@
   }
 }
 
+/* modo ligth */
+
 @media (prefers-color-scheme: light) {
-  .copy-conteudo:after {
+  .js .copy-conteudo:after {
     background: linear-gradient(90deg, #00000000, var(--cor-09) 85%);
   }
+}
+
+.js.ligth .copy-conteudo:after {
+  background: linear-gradient(90deg, #00000000, var(--cor-09) 85%);
+}
+
+.js.dark .copy-conteudo:after {
+  background: linear-gradient(90deg, #00000000, var(--cor-08) 85%);
 }
 
 .copy-area p {

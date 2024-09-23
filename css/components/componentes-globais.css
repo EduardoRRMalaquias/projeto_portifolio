@@ -1,3 +1,5 @@
+/* declaracoes e variaveis */
+
 :root {
   --sombra-forte: 0px 4px 4px var(--2p) #00000040;
   --sombra-fraca: 0px var(--2p) 4px 0px #00000033;
@@ -25,6 +27,34 @@
     --icone-objetivo: url(../../img/icones/icone-objetivo-light.svg);
   }
 }
+
+.dark:root {
+  --sombra-forte: 0px 4px 4px var(--2p) #00000040;
+  --sombra-fraca: 0px var(--2p) 4px 0px #00000033;
+  --briho: 0px 1px 4px 0px #075287e1;
+  --brilho-forte: 0px 1px 4px 1px #075287e1;
+  --brilho-check: 0px 0px 4px 1px #07518799;
+  --sombra-interna-active: inset 0px var(--2p) var(--2p) 0px #00000026;
+  --sombra-interna-check: inset 0px 0px 4px var(--2p) #000000cc;
+  --dec-pequeno: url(../../img/decoracao/dec-menu.svg);
+  --decoracao: url(../../img/decoracao/dec.svg);
+  --fundo-introducao: url(../../img/introducao-fundo.png);
+  --fundo-experiencia: url(../../img/bg-experiencias.jpg);
+  --icone-perfil: url(../../img/icones/icone-perfil.svg);
+  --icone-objetivo: url(../../img/icones/icone-objetivo.svg);
+}
+
+.ligth:root {
+  --sombra-interna-check: inset 0px 0px var(--2p) 1px #00000059;
+  --dec-pequeno: url(../../img/decoracao/dec-menu-ligth.svg);
+  --decoracao: url(../../img/decoracao/dec-ligth.svg);
+  --fundo-introducao: url(../../img/introducao-fundo-ligth.png);
+  --fundo-experiencia: url(../../img/bg-experiencias-ligth.jpg);
+  --icone-perfil: url(../../img/icones/icone-perfil-light.svg);
+  --icone-objetivo: url(../../img/icones/icone-objetivo-light.svg);
+}
+
+/* eslitilaçoes */
 
 .container {
   max-width: 75rem;
@@ -66,6 +96,7 @@
   background-color: var(--cor-08);
 }
 
+/* modo ligth*/
 @media (prefers-color-scheme: light) {
   .tom-primario {
     background-color: var(--cor-09);
@@ -80,6 +111,35 @@
   .tom-secundario .card {
     background-color: var(--cor-09);
   }
+}
+
+/*toms dark*/
+.dark .tom-primario {
+  background-color: var(--cor-10);
+}
+.dark .tom-primario .card {
+  background-color: var(--cor-09);
+}
+
+.dark .tom-secundario {
+  background-color: var(--cor-09);
+}
+.dark .tom-secundario .card {
+  background-color: var(--cor-08);
+}
+
+.ligth .tom-primario {
+  background-color: var(--cor-09);
+}
+.ligth .tom-primario .card {
+  background-color: var(--cor-10);
+}
+
+.ligth .tom-secundario {
+  background-color: var(--cor-08);
+}
+.ligth .tom-secundario .card {
+  background-color: var(--cor-09);
 }
 
 .lista-links,
