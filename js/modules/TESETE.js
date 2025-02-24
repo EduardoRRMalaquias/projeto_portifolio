@@ -2,18 +2,7 @@ const html = document.querySelector("html");
 const metaTheme = document.querySelector("meta[name=theme-color]");
 const isPreferredThemeDark = window.matchMedia("(prefers-color-scheme: dark)");
 const userTheme = localStorage.getItem("userTheme");
-const themes = {
-  light: {
-    background: "#FDFDFD",
-    background_alt: "rgba(218, 214, 214, 0.3)",
-    text: "#25262a",
-  },
-  dark: {
-    background: "#25262a",
-    background_alt: "rgba(218, 214, 214, 0.1)",
-    text: "#FFFFFF",
-  },
-};
+
 
 // Change colors
 function changeColors(theme) {
