@@ -22,6 +22,12 @@
   overflow: hidden;
 }
 
+.informaçoes-sobre-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .informaçoes-sobre-item h4 {
   margin-bottom: var(--20p);
   width: 100%;
